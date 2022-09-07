@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Abonnement pagina: https://www.efteling.com/nl/park/abonnement
-  <img src="readme-images/screenshot-abonnement-pagina" width="375px" alt="abonnement pagina efteling">
+  <img src="readme-images/screenshot-abonnement-pagina.jpg" width="375px" alt="abonnement pagina efteling">
  
 </details>
 
