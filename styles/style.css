@@ -3,9 +3,11 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
 }
 
-button, summary {
+a, summary {
 	cursor: pointer;
 }
 
@@ -16,24 +18,553 @@ button, summary {
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#4d3928;;
+	--color-background:#FAFAF7;
+	--color-efteling-red: #B71234;
+	--color-border: #ede5d5;
+
+}
+
+@font-face {
+	font-family: 'verner';
+	src: url('/assets/fonts/new/Verner.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'ernestine';
+	src: url('/assets/fonts/new/ErnestineWeb.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'ernestine-bold';
+	src: url('/assets/fonts/new/ErnestineWeb-Bold.woff2') format('woff2');
 }
 
 
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+/************/
+/* ALGEMEEN */
+/************/
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+  	color:var(--color-text);
+ 	background-color:var(--color-background);
 }
 
+
+img {
+	width: 100%;
+}
+
+.button-red {
+	color: white;
+	padding: 10px 19px 8px;
+	background-color: var(--color-efteling-red);
+	font-size: 1em;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	font-family: 'ernestine-bold', sans-serif;
+	transition: 0.3s;
+}
+
+.button-red:hover {
+	background-color: #9b0f2c
+}
+
+.button-white {
+	color: var(--color-efteling-red);
+	padding: 10px 19px 8px;
+	background-color: white;
+	border: 1px solid var(--color-border);
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	text-align: center;
+	font-family: 'ernestine-bold', sans-serif;
+	transition: 0.3s;
+}
+
+.button-white:hover{
+	background-color: var(--color-background);
+	
+}
+
+.button-outline {
+	color: white;
+	padding: 10px 19px 8px;
+	text-decoration: none;
+	border: 2px solid white;
+	border-radius: 5px;
+	font-family: 'ernestine-bold', sans-serif;
+	transition: 0.3s;
+}
+
+.button-outline img{
+	height: 15px;
+	width: auto;
+}
+
+
+.button-outline:hover {
+	background-color: rgb(255, 255, 255, 0.2);
+}
+
+
+h1 {
+	font-size: 2.25em;
+	font-family: 'verner', serif;
+	line-height: 1.2em;
+	text-shadow: 2px 2px 2px rgb(0 0 0 / 60%);
+	font-weight: 400;
+}
+
+h2 {
+	color: var(--color-efteling-red);
+	font-family: 'ernestine-bold', sans-serif;
+	font-size: 1.25em;
+}
+
+h3 {
+	color: var(--color-efteling-red);
+	font-family: 'ernestine-bold', sans-serif;
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+h4 {
+	color: var(--color-efteling-red);
+	font-size: 1em;
+	font-family: 'ernestine-bold', sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.75;
+}
+
+@media (min-width: 800px){
+	h1 {
+		font-size: 3.75em;
+	}
+
+	h2 {
+		font-size: 2.25em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.25em;
+	}
+}
+
+
+
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header img:nth-of-type(1) {
+	width: 150px;
+	height: 57px;
+}
+
+header {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+header div{
+	max-width: 1024px;
+	width: 90%;
+	margin: auto;
+}
+
+
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer details {
+	padding: 1em 0;
+	border-bottom: 1px solid var(--color-border);
+}
+
+details summary{
+	font-weight: bold;
+}
+
+footer {
+	background-color: white;
+	border-top: 1px solid var(--color-border);
+}
+
+footer li{
+	list-style: none;
+	text-decoration: none;
+	margin-bottom: 1em;
+}
+
+footer a{
+	text-decoration: none;
+	color: var(--color-text)
+}
+
+footer a:hover{
+	color: var(--color-efteling-red);
+}
+
+input[type=submit] {
+	border: none;
+	cursor: pointer;
+	display: block;
+}
+
+summary {
+	list-style: none
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+
+
+
+
+/****************/
+/* INDEX PAGINA */
+/****************/
+
+/* HERO SECTION */
+
+.index main > section > img{
+	width: 100%;
+	height: 20em;
+	object-fit: cover;
+	object-position: 1em 40%;
+	filter: brightness(70%);
+	transform: scale(1.5);
+}
+
+.index main > section{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.index main > section > div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	color: white;
+	z-index: 1;
+
+	width: 60%; /* breedte tekst fixen -> hoe?? */
+}
+
+@media (min-width: 800px){
+	.index main > section > img{
+		width: 100%;
+		height: 29em;
+		object-position: 50% 50%; /* 50% 50% is normaal waarde --> reset */
+		transform: scale(1);
+	}
+}
+
+.index h1 {
+	margin-bottom: 1em;
+}
+
+
+
+/* DRIE KOLOMMEN */
+
+.index main > div > div {
+	display: flex;
+	gap: 1em;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+.index main > div > div > section {
+	flex-basis: 33%;
+	border: 1px solid var(--color-border);
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.index main > div > div div{
+	padding: 20px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.index main > div > div img {
+	border-radius: 5px 5px 0 0;
+}
+
+.index main > div > div a{
+	margin-top: 20px;
+}
+
+.index main > div > div p{
+	flex-grow: 1; /*duwt button altijd naar de onderkant van de cart*/
+}
+
+@media (min-width: 800px){
+	.index main > div > div {
+		flex-direction: row;
+	}
+}
+
+
+
+
+/* SECTION OVERNACHTEN */
+
+.index main > div > section:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--color-border);
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	width: 100%;
+}
+
+.index main > div > section:nth-of-type(1) div{
+	padding: 20px;
+}
+
+.index main > div > section:nth-of-type(1) li{
+	display: flex;
+	align-items: baseline;
+	gap: 1em;
+	margin-bottom: 5px;
+	
+}
+
+.index main > div > section:nth-of-type(1) > div img{
+	height: 100%;
+	width: 1em;
+}
+
+
+@media (min-width: 800px){
+	.index main > div > section:nth-of-type(1) {
+		flex-direction: row;
+	}
+
+	.index main > div > section:nth-of-type(1) img {
+		width: 40%;
+		height: 100%;
+		display: inline-block;
+		align-self: center;
+	}
+}
+
+
+
+/* SECTION JUBILEUM */
+
+.index main > div > section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	gap: 20px; 
+}
+
+.index main > div > section:nth-of-type(2) div{
+	padding-right: 20px;
+}
+
+.index main > div > section:nth-of-type(2) p{
+	margin: 10px 0;
+}
+
+
+@media (min-width: 800px){
+	.index main > div > section:nth-of-type(2){
+		flex-direction: row-reverse;
+	}
+
+	.index main > div > section:nth-of-type(2) img{
+		width: 50%;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+main > div {
+	width: 90%;
+	margin: auto;
+	max-width: 500px;
+}
+
+
+
+
+section{
+	margin-bottom: 2em;
+}
+
+@media (min-width: 800px){
+	main > div{
+		max-width: 1024px;
+	}
+
+	section{
+		margin-bottom: 4em;
+	}
+}
+
+
+
+
+/*****************/
+/* HERFST PAGINA */
+/*****************/
+
+/* HERO SECTION */
+
+.herfst video {
+	width: 100%;
+	height: 25em;
+	object-fit: cover;
+}
+
+.herfst section:nth-of-type(1){
+	position: relative;
+	text-align: center;
+}
+
+.herfst h1{
+	position: absolute;
+	color: white;
+	/* onderstaande regels centreren h1 in midden. bron: https://www.w3schools.com/howto/howto_css_image_text.asp */
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* HERFST SECTION */
+
+.herfst main > section:nth-of-type(2){
+	text-align: center;
+}
+
+
+
+
+
+/* COLLAGE SECTION */
+
+.herfst main > section:nth-of-type(3){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.herfst main > section:nth-of-type(3) > img:nth-of-type(1){
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+@media (min-width: 800px){
+	.herfst main > section:nth-of-type(3){
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.herfst main > section:nth-of-type(3) > img:nth-of-type(1){
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.herfst main > section:nth-of-type(3) > img:nth-of-type(2){
+		grid-column-start: 4;
+		grid-column-end: 7;
+	}
+
+	.herfst main > section:nth-of-type(3) > img:nth-of-type(3){
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+	}
+
+	.herfst main > section:nth-of-type(3) > img:nth-of-type(4){
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+	}
+
+	.herfst main > section:nth-of-type(3) > img:nth-of-type(5){
+		grid-column-start: 5;
+		grid-column-end: 7;
+		grid-row-start: 2;
+	}
+}
+
+
+
+
+
+/* LANGNEK SECTION */
+
+.herfst section:nth-of-type(4){
+	position: relative;
+}
+
+.herfst section:nth-of-type(4) div{
+	position: absolute;
+	/* onderstaande regels centreren h1 in midden. bron: https://www.w3schools.com/howto/howto_css_image_text.asp */
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+}
+
+.herfst section:nth-of-type(4) h2, section:nth-of-type(4) p{
+	color: white;
+}
+
+.herfst section:nth-of-type(4) img{
+	width: 100%;
+	height: 25em;
+	object-fit: cover;
+	filter: brightness(70%);
+}
