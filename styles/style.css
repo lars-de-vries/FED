@@ -24,6 +24,7 @@ a, summary {
 	--color-background:#FAFAF7;
 	--color-efteling-red: #B71234;
 	--color-border: #ede5d5;
+	--color-button-outline-red: #9B0F2C;
 
 }
 
@@ -50,6 +51,10 @@ a, summary {
 /* ALGEMEEN */
 /************/
 
+html{
+	scroll-behavior: smooth; /*https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html*/
+}
+
 body {
   	color:var(--color-text);
  	background-color:var(--color-background);
@@ -62,7 +67,7 @@ img {
 
 .button-red {
 	color: white;
-	padding: 10px 19px 8px;
+	padding: 14px 20px 12px 20px;
 	background-color: var(--color-efteling-red);
 	font-size: 1em;
 	text-decoration: none;
@@ -70,15 +75,31 @@ img {
 	display: inline-block;
 	font-family: 'ernestine-bold', sans-serif;
 	transition: 0.3s;
+	position: relative;
+}
+
+.button-red::before{
+	border-radius: 5px;
+    border: 2px solid var(--color-button-outline-red);
+	position: absolute;
+    content: '';
+    display: block;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+	bottom: 4px;
 }
 
 .button-red:hover {
 	background-color: #9b0f2c
 }
 
+
+
+
 .button-white {
 	color: var(--color-efteling-red);
-	padding: 10px 19px 8px;
+	padding: 14px 20px 12px 20px;
 	background-color: white;
 	border: 1px solid var(--color-border);
 	border-radius: 5px;
@@ -88,11 +109,23 @@ img {
 	text-align: center;
 	font-family: 'ernestine-bold', sans-serif;
 	transition: 0.3s;
+	position: relative;
+}
+
+.button-white::before {
+	border-radius: 5px;
+    border: 2px solid var(--color-border);
+	position: absolute;
+    content: '';
+    display: block;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+	bottom: 4px;
 }
 
 .button-white:hover{
 	background-color: var(--color-background);
-	
 }
 
 .button-outline {
@@ -150,7 +183,7 @@ p {
 	line-height: 1.75;
 }
 
-@media (min-width: 800px){
+@media (min-width: 48em){
 	h1 {
 		font-size: 3.75em;
 	}
@@ -176,23 +209,135 @@ p {
 /* HEADER */
 /**********/
 
-header img:nth-of-type(1) {
-	width: 150px;
-	height: 57px;
-}
+
+
 
 header {
 	background-color: white;
 	position: sticky;
 	top: 0;
-	z-index: 999;
+	z-index: 9999999;
+	height: 4em;
+	border-bottom: 1px solid var(--color-border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-header div{
-	max-width: 1024px;
-	width: 90%;
-	margin: auto;
+
+
+/* logo */
+header a img:nth-of-type(1) {
+	width: 100px;
 }
+
+
+header > div{
+	padding: 0 20px;
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* container om zoek icon & hamburger menu */
+header > div > div {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+
+header div div img{
+	height: 1.2em;
+}
+
+/* hamburger menu met tekst */
+header div div button{
+	background-color: white;
+	display: flex;
+	align-items:center;
+	flex-direction: row-reverse;
+  	gap: 0.5em;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	color: var(--color-text);
+
+}
+header div div button:hover {
+	cursor: pointer;
+}
+
+header div div button img {
+	width: 2em;
+}
+
+nav{ 
+	list-style:none;
+	display:grid;
+	align-content:start;
+	gap:1em;
+	background-color: white;
+	position:fixed;
+	left:0;
+	right:0;
+	top:4em;
+	bottom:0;
+	transform:translatex(100%);
+	transition: 0.5s;
+}
+
+nav ul{
+	list-style:none;
+}
+
+nav.toonMenu {
+	transform:translatex(0);
+}
+
+/* links in de header */
+header nav a{
+	color: var(--color-text);
+	font-family: 'ernestine-bold', sans-serif;
+	text-decoration:none;
+	transition: 0.5s;
+	border-bottom: 1px solid var(--color-border);
+	padding: 1.5em 0 1.5em 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+header nav a:hover{
+	color: var(--color-efteling-red);
+}
+
+@media (min-width: 50em){
+	header div div button {
+		display:none;
+	}
+
+	nav{
+		position:static;
+		transform:none;
+		background:none;
+	}
+
+	nav ul{
+		display: flex;
+		gap: 2em;
+	}
+
+	header nav a{
+		padding: 0 20px;
+		border-bottom: none;
+	}
+
+	header > div{
+		max-width: 64em;
+	}
+}
+
 
 
 
@@ -202,13 +347,34 @@ header div{
 /* FOOTER */
 /**********/
 
+footer{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
 footer details {
 	padding: 1em 0;
 	border-bottom: 1px solid var(--color-border);
+	max-width: 64em;
+	margin: 0 auto;
 }
 
-details summary{
+footer details summary{
 	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer details summary::after{
+	content: '+';
+}
+
+footer details[open] summary::after{
+	content: '-'
+}
+
+footer details summary::-webkit-details-marker {
+	display: none;
 }
 
 footer {
@@ -219,7 +385,7 @@ footer {
 footer li{
 	list-style: none;
 	text-decoration: none;
-	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 footer a{
@@ -241,8 +407,20 @@ summary {
 	list-style: none
 }
 
-summary::-webkit-details-marker {
-	display: none;
+@media (min-width: 900px){
+	footer {
+		display: flex;
+	}
+
+	footer details{
+		max-width: 30%;
+	}
+
+	footer details summary::after, footer details[open] summary::after{
+		content: '';
+	}
+
+	
 }
 
 
@@ -255,7 +433,7 @@ summary::-webkit-details-marker {
 
 /* HERO SECTION */
 
-.index main > section > img{
+.index main > section:nth-of-type(1) img{
 	width: 100%;
 	height: 20em;
 	object-fit: cover;
@@ -264,13 +442,13 @@ summary::-webkit-details-marker {
 	transform: scale(1.5);
 }
 
-.index main > section{
+.index main > section:nth-of-type(1){
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 }
 
-.index main > section > div{
+.index main > section:nth-of-type(1) > div{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -281,8 +459,8 @@ summary::-webkit-details-marker {
 	width: 60%; /* breedte tekst fixen -> hoe?? */
 }
 
-@media (min-width: 800px){
-	.index main > section > img{
+@media (min-width: 48em){
+	.index main > section:nth-of-type(1) > img{
 		width: 100%;
 		height: 29em;
 		object-position: 50% 50%; /* 50% 50% is normaal waarde --> reset */
@@ -296,16 +474,131 @@ summary::-webkit-details-marker {
 
 
 
+
+
+/* SECTION OVERNACHTEN */
+
+.index main > section:nth-of-type(2){
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.index main > section:nth-of-type(2) > div {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--color-border);
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+}
+
+.index main > section:nth-of-type(2) > div div{
+	padding: 20px;
+}
+
+.index main > section:nth-of-type(2) > div li{
+	display: flex;
+	align-items: baseline;
+	gap: 1em;
+	margin-bottom: 5px;
+	
+}
+
+.index main > section:nth-of-type(2) > div > div img{
+	height: 100%;
+	width: 1em;
+}
+
+.index main > section:nth-of-type(2) > div > img{
+	border-radius: 5px 5px 0 0;
+}
+
+@media (min-width: 48em){
+	.index main > section:nth-of-type(2){
+		max-width: 64em;
+	}
+
+	.index main > section:nth-of-type(2) > div {
+		flex-direction: row;
+
+	}
+
+	.index main > section:nth-of-type(2) > div > img {
+		width: 40%;
+		height: 100%;
+		display: inline-block;
+		align-self: center;
+		border-radius: 0;
+
+		
+	}
+}
+
+
+
+/* SECTION JUBILEUM */
+
+.index main > section:nth-of-type(3){
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+.index main > section:nth-of-type(3) > div{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	gap: 20px;
+
+}
+
+
+
+.index main > section:nth-of-type(3) > div p{
+	margin: 10px 0;
+}
+
+
+@media (min-width: 48em){
+	.index main > section:nth-of-type(3){
+		max-width: 64em;
+	}
+
+	.index main > section:nth-of-type(3) > div{
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.index main > section:nth-of-type(3) > div img{
+		width: 50%;
+		height: 100%;
+	}
+
+	.index main > section:nth-of-type(3) > div div{
+		padding-right: 20px;
+	}
+}
+
+
+
+
+
+
 /* DRIE KOLOMMEN */
 
-.index main > div > div {
+.index main > div {
 	display: flex;
 	gap: 1em;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 500px;
 }
 
-.index main > div > div > section {
+.index main > div > section {
 	flex-basis: 33%;
 	border: 1px solid var(--color-border);
 	background-color: white;
@@ -314,133 +607,41 @@ summary::-webkit-details-marker {
 	flex-direction: column;
 }
 
-.index main > div > div div{
+.index main > div div{
 	padding: 20px;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 }
 
-.index main > div > div img {
+.index main > div img {
 	border-radius: 5px 5px 0 0;
 }
 
-.index main > div > div a{
+.index main > div a{
 	margin-top: 20px;
 }
 
-.index main > div > div p{
+.index main > div p{
 	flex-grow: 1; /*duwt button altijd naar de onderkant van de cart*/
 }
 
-@media (min-width: 800px){
-	.index main > div > div {
+@media (min-width: 48em){
+	.index main > div {
 		flex-direction: row;
+		max-width: 64em;
 	}
 }
-
-
-
-
-/* SECTION OVERNACHTEN */
-
-.index main > div > section:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid var(--color-border);
-	background-color: white;
-	border-radius: 5px;
-	display: flex;
-	width: 100%;
-}
-
-.index main > div > section:nth-of-type(1) div{
-	padding: 20px;
-}
-
-.index main > div > section:nth-of-type(1) li{
-	display: flex;
-	align-items: baseline;
-	gap: 1em;
-	margin-bottom: 5px;
-	
-}
-
-.index main > div > section:nth-of-type(1) > div img{
-	height: 100%;
-	width: 1em;
-}
-
-
-@media (min-width: 800px){
-	.index main > div > section:nth-of-type(1) {
-		flex-direction: row;
-	}
-
-	.index main > div > section:nth-of-type(1) img {
-		width: 40%;
-		height: 100%;
-		display: inline-block;
-		align-self: center;
-	}
-}
-
-
-
-/* SECTION JUBILEUM */
-
-.index main > div > section:nth-of-type(2){
-	display: flex;
-	flex-direction: column;
-	flex-basis: 50%;
-	gap: 20px; 
-}
-
-.index main > div > section:nth-of-type(2) div{
-	padding-right: 20px;
-}
-
-.index main > div > section:nth-of-type(2) p{
-	margin: 10px 0;
-}
-
-
-@media (min-width: 800px){
-	.index main > div > section:nth-of-type(2){
-		flex-direction: row-reverse;
-	}
-
-	.index main > div > section:nth-of-type(2) img{
-		width: 50%;
-		height: 100%;
-	}
-}
-
-
-
-
-
-
-main > div {
-	width: 90%;
-	margin: auto;
-	max-width: 500px;
-}
-
 
 
 
 section{
-	margin-bottom: 2em;
+	margin-bottom: 2em !important
 }
 
-@media (min-width: 800px){
-	main > div{
-		max-width: 1024px;
-	}
-
+@media (min-width: 48em){
 	section{
-		margin-bottom: 4em;
+		margin-bottom: 4em !important;
 	}
 }
 
@@ -450,6 +651,19 @@ section{
 /*****************/
 /* HERFST PAGINA */
 /*****************/
+
+.herfst p{
+	font-family: 'ernestine', sans-serif;
+}
+
+@media (min-width: 48em){
+	.herfst p{
+		font-size: 1.25em;
+	}
+}
+
+
+
 
 /* HERO SECTION */
 
@@ -473,21 +687,87 @@ section{
   	transform: translate(-50%, -50%);
 }
 
+.herfst section:nth-of-type(1) a img{
+	height: 1em;
+	width: 1em;
+	
+}
 
+/* https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
+.herfst section:nth-of-type(1) a {
+	height: 50px;
+	width: 50px;
+	padding: 10px 10px 8px 10px;
+	border-radius: 50%;
+	border: 1px solid var(--color-border);
+	background-color: white;
+
+	position: absolute;
+	z-index: 9999;
+	bottom: -45px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.herfst section:nth-of-type(1) a:hover{
+	background-color: var(--color-background);
+}
+
+.herfst section:nth-of-type(1) a::before{
+	height: 10px;
+	width: 10px;
+	padding: 18px;
+	border-radius: 50%;
+	border: 3px solid var(--color-border);
+	background-color: none;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 
 
 /* HERFST SECTION */
 
-.herfst main > section:nth-of-type(2){
+.herfst main > section:nth-of-type(2) h2{
+	line-height: 1.5em;
+	margin: 0 10%;
+}
+
+.herfst main > section:nth-of-type(2) {
+	padding: 0 20px;
+	max-width: 64em;
 	text-align: center;
+	margin: 0 auto;
 }
 
 
 
+.herfst main > section:nth-of-type(2) p{
+	margin: 1em 0;
+}
+
+@media (min-width: 48em){
+	.herfst main > section:nth-of-type(2) div {
+		margin: 0 15%;
+	}
+}
 
 
 /* COLLAGE SECTION */
+.herfst section:nth-of-type(3){
+	padding: 0 20px;
+	max-width: 64em;
+	margin: 0 auto;
+}
+
+
 
 .herfst main > section:nth-of-type(3){
 	display: grid;
@@ -503,7 +783,7 @@ section{
 	grid-row-end: 3;
 }
 
-@media (min-width: 800px){
+@media (min-width: 48em){
 	.herfst main > section:nth-of-type(3){
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -546,25 +826,116 @@ section{
 
 .herfst section:nth-of-type(4){
 	position: relative;
+	
 }
 
-.herfst section:nth-of-type(4) div{
-	position: absolute;
+.herfst section:nth-of-type(4) > div > div{
+
+	padding: 0 20px;
 	/* onderstaande regels centreren h1 in midden. bron: https://www.w3schools.com/howto/howto_css_image_text.asp */
- 	top: 50%;
+ 	
+	top: 5em;
+	/* top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%); */
 	z-index: 2;
 	text-align: center;
+
+}
+
+.herfst section:nth-of-type(4) > div {
+	max-width: 64em;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.herfst section:nth-of-type(4) > div p {
+	margin: 1em 0;
 }
 
 .herfst section:nth-of-type(4) h2, section:nth-of-type(4) p{
 	color: white;
 }
 
-.herfst section:nth-of-type(4) img{
+.herfst section:nth-of-type(4) > img{
 	width: 100%;
-	height: 25em;
+	height: 34.375em;
 	object-fit: cover;
 	filter: brightness(70%);
+}
+
+
+
+.herfst section:nth-of-type(4) > a {
+	height: 50px;
+	width: 50px;
+	padding: 10px 10px 8px 10px;
+	border-radius: 50%;
+	border: 1px solid var(--color-border);
+	background-color: white;
+
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.herfst section:nth-of-type(4) > a:hover{
+	background-color: var(--color-background);
+}
+
+.herfst section:nth-of-type(4) > a::before{
+	height: 10px;
+	width: 10px;
+	padding: 18px;
+	border-radius: 50%;
+	border: 3px solid var(--color-border);
+	background-color: none;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.herfst section:nth-of-type(4) > a img{
+	height: 1em;
+	width: 1em;
+}
+
+
+
+@media (min-width: 48em) {
+	.herfst section:nth-of-type(4) h2 {
+		font-size: 1.25em;
+	}
+	.herfst section:nth-of-type(4) p {
+		font-size: 1em;
+	}
+	.herfst section:nth-of-type(4) > div > div{
+		width: 50%;
+		max-width: 500px;
+		}
+}
+
+@media (min-width: 64em) {
+	.herfst section:nth-of-type(4) h2 {
+		font-size: 2.25em;
+	}
+	.herfst section:nth-of-type(4) p {
+		font-size: 1.25em;
+	}
 }
