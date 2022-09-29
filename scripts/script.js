@@ -1,19 +1,33 @@
 
-var hamburgerMenu = document.querySelector("header button");
+var hamburgerMenu = document.querySelector("header:nth-of-type(2) button");
 
 hamburgerMenu.addEventListener("click", toggleMenu);
 
 function toggleMenu() {  
-  var deNav = document.querySelector("nav");
+  var deNav = document.querySelector("header:nth-of-type(2) nav");
   deNav.classList.toggle("toonMenu");
 
-  var hamburgerIcon = document.querySelector("header button img");
+  var hamburgerIcon = document.querySelector("header:nth-of-type(2) button img");
   if (deNav.classList.contains("toonMenu")){
     hamburgerIcon.src="assets/hamburger-menu-close.svg";
   } else{
     hamburgerIcon.src="assets/hamburger-menu.svg";
   }
+
+
+
+  // var navList = document.querySelector("header:nth-of-type(2) nav ul");
+  // navList.classList.toggle("toonList");
+
+
+  // var main = document.querySelector("main");
+  // main.classList.toggle("hideMain");
 };
+
+
+
+
+
 
 
 

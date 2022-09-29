@@ -66,10 +66,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  heel lang wachten, je kan niet snel door de pagina navigeren omdat je alles meot aanhoren.
+  Er zijn verschillende paginas van de Efteling website getest met een screenreader. Wat voornamelijk opviel was dat je heel lang moet wachten, je kan niet snel door de pagina navigeren omdat je alles moet aanhoren. Verder hoor je bij elk element wat voor HTML tag dit element heeft.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  Kritisch kijken naar welke content je wel en niet op de pagina wilt laten zien, overbodige informatie kan worden weggelaten.
+  Kritisch kijken naar welke content je wel en niet op de pagina wilt laten zien, overbodige informatie kan worden weggelaten. Verder is het ontzettend belangrijk om te letten op de juiste HTML tags zodat het duidelijk is wat wat is. Als laatste is het van belang om afbeeldingen een duidelijke 'alt' te geven zodat blinden/slechtzienden zich kunnen voortstellen wat er op de afbeeldingen te zien is.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -82,17 +82,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier korte omschrijving (met indien nodig afbeeldingen)
   Bevindingen elastiekjes: Wanneer je nog vinger vrij hebt dan is het nogsteeds gemakkelijk om door de website heen te navigeren. Pas wanneer je helemaal geen vingers meer kan gebruiken zorgt dit voor problemen. Wanneer dit het geval is kan je niet meer makkelijk op kleine knoppen klikken of klik je bijvoorbeeld op de verkeerde knop wanneer twee knoppen erg dicht tegen elkaar aan zitten.
 
-  Bevindingen shocks: lastig als 2 knoppen naast elkaar zitten, kleine knoppen niet makkelijk 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  Voor gebruikers met zo'n beperking is het daarom wenselijk dat de knoppen een groot formaat hebben.
+  Voor gebruikers met zo'n beperking is het daarom wenselijk dat de knoppen een groot formaat hebben en genoeg ruimte van elkaar verwijderd zijn zodat er niet perongeluk op een verkeerde knop wordt geklikt.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  Tijdens de toegankelijkheidstest zijn allereerst verschillende vormen van kleurenblindheid onderzocht. Bij al deze vormen was de content op de website goed te lezen. Dit had te maken met dat er door de hele website heen voldoende contrast werd gebruikt. Grote problemen kwamen naar voren bij het gebruik van de verschillende brillen (zwarte vlekken & wazig zicht). Primaire acties moeten heel duidelijk te herkennen zijn, dit kan worden gedaan door de knop extra groot te maken of door deze een opvallende kleur te geven.
-  .
+  Tijdens de toegankelijkheidstest zijn allereerst verschillende vormen van kleurenblindheid onderzocht. Bij al deze vormen was de content op de website goed te lezen. Dit had te maken met dat er door de hele website heen voldoende contrast werd gebruikt. Grote problemen kwamen naar voren bij het gebruik van de verschillende brillen (zwarte vlekken & wazig zicht), hierbij was het erg lastig om bijvoorbeeld je muis te volgen en om knoppen te vinden op het scherm. 
   
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
+  Primaire acties moeten heel duidelijk te herkennen zijn, dit kan worden gedaan door de knop extra groot te maken of door deze een opvallende kleur te geven.
 
 
 
@@ -133,7 +131,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/herfst-pagina-voortgangsgesprek-1" width="375px" alt="voortgang herfst pagina">
 
 
-  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd.
+  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -148,10 +146,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+
+  - Uitleg gekregen over hoe studentassistenten hun CSS document overzichtelijk houden -> bovenaan alle algemene dingen, vervolgens steeds specifieker. Overal duidelijke koppen maken zodat je code gemakkelijk terug kan vinden.
+  - Problemen met webite op GitHub zetten -> studentassitent heeft hierbij geholpen.
+  - Studentassistent heeft GitHub Desktop voor mij geinstalleerd en juist ingesteld -> hier zie ik alle aanpassingen die ik heb gemaakt, deze kan ik vervolgens op GitHub zetten door eerst op 'commit to main' en vervolgens op 'push' te klikken.
+
 
 </details>
 
@@ -167,24 +166,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  <img src="readme-images/home-pagina-voortgangsgesprek-2" width="375px" alt="voortgang home pagina">
+
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-2" width="375px" alt="voortgang herfst pagina">
+
+  Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed, sommige punten kostte wel veel tijd om het precies naar wens te krijgen.
+
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  De meeting van het tweede voortgangsgesprek heb ik helaas moeten missen aangezien ik die dag ziek was. Ik heb dit voortgangsgesprek persoonlijk ingehaald met een studentenassistent op 27-09-2022. Voorafgaand aan dit gesprek wilde ik de volgende punten behandelen:
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Wat is de juiste manier om footer responsive te maken? -> is het maken van 2 verschillende footers oke?
+  - Wat is de beste manier om een simpel lijntje toe te voegen? -> hr / div gebruiken?
+  - Buttons -> mag je hier classes voor gebruiken?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Omdat ik op klein scherm details en summary heb gebruikt binnen mijn footer is de beste manier om deze responsive te maken inderdaad door 2 verschillende footers te maken (klein scherm met details & summary, groot scherm zonder)
+  - Lijntje toevoegen kan op meerdere manieren -> makkelijkste manier is om ::after te gebruiken.
+  - Outline binnen een button toevoegen is nu ook met ::after gedaan -> dit zou je ook met een dubbele box-shadow kunnen doen (was achteraf misschien makkelijker geweest).
+  - Je mag op buttons alleen classes gebruiken als je in je code laat zien dat je andere selectoren (zoals :nth-of-type) begrijpt en meerdere malen gebruikt.
 
 </details>
 
@@ -202,27 +204,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Het gebruiken van een screenreader op de pagina ging redelijk goed. Door overal juiste en semantische HTML te gebruiken is het logisch om door te pagina heen te gaan. Het enige minpunt waar ik tegenaan ben gelopen is dat de afbeeldingen soms lastig te begrijpen waren omdat de 'alt' beschrijving niet zo specifiek is. Ik kan mij voorstellen dat het voor blinden/slechtzienden daarom lastig te begrijpen is wat er exact op de afbeelding te zien is.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Het bovenstaande probleem kan gemakkelijk worden opgelost door goed te letten op het formuleren van een duidelijk 'alt'. Tijdens het coderen denk je hier vaak te snel over maar het is juist belangrijk om hier goed over na te denken zodat blinden/slechtzienden ondanks hun beperkingen de afbeeldingen kunnen begrijpen.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  De website is goed te besturen met behulp van alleen een toetsenbord. Aan de website is nu een 'Ga naar content' knop toegevoegd die zichtbaar wordt wanneer je tabt, dit zorgt ervoor dat je gemakkelijk de navigatie kan overslaan zonder hier helemaal doorheen te moeten. Het enige grote probleem waar tegenaan werd gelopen is dat wanneer je op een klein scherm door de navigatie tabt zonder dat dit zichtbaar is op het scherm. Op dat moment is het dus niet duidelijk waar de focus op dat moment ligt. Verder is de focus state ook nog niet vormgegeven, deze heeft momenteel nog de standaard opmaak.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Het probleem van de navigatie kan worden opgelost door focus-whitin te gebruiken. Hiermee wordt de navigatie geopend wanneer hier focus op wordt gelegd.
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  De buttons zijn groot genoeg om hier gemakkelijk op te kunnen klikken, ook is er voldoende ruimte tussen de verschillende buttons waardoor er niet perongeluk op een verkeerde knop wordt geklikt. Mogelijk staan de links in de footer wel iets te dicht onder elkaar.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Dit probleem kan simpel worden opgelost door de gap tussen de verschillende list items in de footer iets groter te maken. Op deze manier wordt er voorkomen dan gebruikers perongeluk op de verkeerde link klikken.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Opnieuw zijn verschillende vormen van kleurenblindheid onderzocht, bij al deze vormen was de content op de pagina goed zichtbaar. Overal op de verschillende paginas is namelijk voldoende contrast gebruikt. Het enige probleem waar tegenaan werd gelopen was bij het gebruik van de verschillende brillen (zwarte vlekken & wazig zicht), hierbij was het soms nogsteeds lastig om bepaalde knoppen te vinden op het scherm. De hover state van deze knoppen was wel vormgegeven maar dit is mogelijk te subtiel gedaan waardoor er te weinig onderscheid is tussen de verschillende states.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  De hover state dient van de verschillende knoppen dient duidelijker te worden vormgegeven. Op dit moment wordt alleen de kleur iets donkerder, dit is mogelijk te weinig verschil. Dit probleem kan worden opgelost door het kleurverschil iets duidelijker te maken of door bijvoorbeeld de grootte van de knop aan te passen.
 </details>
 
 
@@ -273,13 +279,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar,  accesibillity en nog veel meer. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-
+  Om eerlijk te zijn is eigenlijk heel veel wat ik wilde maken uiteindelijk wel gelukt, sommige dingen natuurlijk wel met iets meer moeite dan de andere dingen. Bijvoorbeeld het volledig responsive maken van de website heeft op sommige punten veel tijd gekost maar uiteindelijk ben ik toch erg tevreden met het resultaat.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 

@@ -30,17 +30,17 @@ a, summary {
 
 @font-face {
 	font-family: 'verner';
-	src: url('assets/fonts/new/Verner.woff2') format('woff2');
+	src: url('/assets/fonts/Verner.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'ernestine';
-	src: url('assets/fonts/new/ErnestineWeb.woff2') format('woff2');
+	src: url('/assets/fonts/ErnestineWeb.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'ernestine-bold';
-	src: url('assets/fonts/new/ErnestineWeb-Bold.woff2') format('woff2');
+	src: url('/assets/fonts/ErnestineWeb-Bold.woff2') format('woff2');
 }
 
 
@@ -51,6 +51,18 @@ a, summary {
 /* ALGEMEEN */
 /************/
 
+*:focus-visible{
+	outline: 2px solid 	var(--color-efteling-red);
+	outline-offset: 0.25em;
+	border-radius: 5px;
+	transition: 0.3s !important;
+}
+
+*:active{
+	outline: none !important;
+}
+
+
 html{
 	scroll-behavior: smooth; /*https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html*/
 }
@@ -60,10 +72,17 @@ body {
  	background-color:var(--color-background);
 }
 
+/* main.hideMain{
+	display:none;
+} */
+
+
 
 img {
 	width: 100%;
 }
+
+/* BUTTONS */
 
 .button-red {
 	color: white;
@@ -88,13 +107,16 @@ img {
     right: 4px;
     top: 4px;
 	bottom: 4px;
+	transition: 1s;
+}
+
+.button-red:hover:before{
+	border: 2px solid var(--color-background);
 }
 
 .button-red:hover {
-	background-color: #9b0f2c
+	background-color: var(--color-button-outline-red);
 }
-
-
 
 
 .button-white {
@@ -122,10 +144,14 @@ img {
     right: 4px;
     top: 4px;
 	bottom: 4px;
+	transition: 0.8s;
+}
+.button-white:hover:before{
+	border: 2px solid var(--color-efteling-red);
 }
 
 .button-white:hover{
-	background-color: var(--color-background);
+	background-color: var(--color-border);
 }
 
 .button-outline {
@@ -135,19 +161,33 @@ img {
 	border: 2px solid white;
 	border-radius: 5px;
 	font-family: 'ernestine-bold', sans-serif;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
-.button-outline img{
+/* .button-outline img{
 	height: 15px;
 	width: auto;
-}
+} */
 
+.button-outline::after{
+	content: '>';
+	margin-left: 0.5em;
+	/* content: url(/) */
+}
 
 .button-outline:hover {
-	background-color: rgb(255, 255, 255, 0.2);
+	background: var(--color-button-outline-red);
 }
 
+section{
+	margin-bottom: 2em !important
+}
+
+@media (min-width: 48em){
+	section{
+		margin-bottom: 4em !important;
+	}
+}
 
 h1 {
 	font-size: 2.25em;
@@ -210,9 +250,72 @@ p {
 /**********/
 
 
+header:first-of-type{
+	display: none;
+	background: var(--color-background);
+}
+
+header:first-of-type nav{
+	max-width: 64em;
+	margin: 0 auto;
+	padding: 0.25em 20px;
+}
+
+header:first-of-type ul{
+	display: flex;
+	list-style: none;
+	gap: 2em;
+	justify-content: end;
+	align-items: center;
+}
 
 
-header {
+header:first-of-type ul li:last-of-type{
+	display: flex;
+	gap: 0.5em;
+}
+
+header:first-of-type ul li:last-of-type img{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+header:first-of-type a{
+	text-decoration: none;
+	color: var(--color-text);
+	font-size: 0.75em;
+	font-family: 'open sans', sans-serif;
+
+}
+
+header:first-of-type a:hover{
+	color: var(--color-efteling-red);
+}
+
+
+@media (min-width: 50em){
+	header:first-of-type{
+		display: inline;
+	}
+}
+
+
+
+
+
+/* skip to content button */
+header:nth-of-type(2) > div > a:nth-of-type(2) {
+	position: absolute;
+	transform: translatey(-300%);
+}
+
+header:nth-of-type(2) > div > a:nth-of-type(2):focus {
+	transform: translatey(100%);
+}
+
+
+header:nth-of-type(2) {
 	background-color: white;
 	position: sticky;
 	top: 0;
@@ -222,17 +325,15 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-
+}	
 
 /* logo */
-header a img:nth-of-type(1) {
+header:nth-of-type(2) a img:nth-of-type(1) {
 	width: 100px;
 }
 
-
-header > div{
+/* container om witruimte te geven aan header */
+header:nth-of-type(2) > div{
 	padding: 0 20px;
 	width: 100%;
 	display:flex;
@@ -241,18 +342,19 @@ header > div{
 }
 
 /* container om zoek icon & hamburger menu */
-header > div > div {
+header:nth-of-type(2) > div > div {
 	display: flex;
 	align-items: center;
 	gap: 2em;
 }
 
-header div div img{
+/* search icon */
+header:nth-of-type(2) div div img{
 	height: 1.2em;
 }
 
 /* hamburger menu met tekst */
-header div div button{
+header:nth-of-type(2) div div button{
 	background-color: white;
 	display: flex;
 	align-items:center;
@@ -263,17 +365,17 @@ header div div button{
 	font-weight: 700;
 	font-size: 1em;
 	color: var(--color-text);
-
 }
-header div div button:hover {
+header:nth-of-type(2) div div button:hover {
 	cursor: pointer;
 }
-
-header div div button img {
+header:nth-of-type(2) div div button img {
 	width: 2em;
 }
 
-nav{ 
+
+
+header:nth-of-type(2) nav{ 
 	list-style:none;
 	display:grid;
 	align-content:start;
@@ -284,20 +386,29 @@ nav{
 	right:0;
 	top:4em;
 	bottom:0;
-	transform:translatex(100%);
+	transform:translatex(100%); /* menu standaard buiten beeld */
 	transition: 0.5s;
 }
 
-nav ul{
-	list-style:none;
+header:nth-of-type(2) nav ul{
+	list-style: none;
+}
+	/* display: none;
 }
 
-nav.toonMenu {
+header:nth-of-type(2) nav ul.toonList{
+	display: block;
+} */
+
+
+/* brengt menu in beeld */
+header:nth-of-type(2) nav.toonMenu,
+header:nth-of-type(2) nav:focus-within {
 	transform:translatex(0);
 }
 
 /* links in de header */
-header nav a{
+header:nth-of-type(2) nav a{
 	color: var(--color-text);
 	font-family: 'ernestine-bold', sans-serif;
 	text-decoration:none;
@@ -308,32 +419,33 @@ header nav a{
 	width: 100%;
 }
 
-header nav a:hover{
+header:nth-of-type(2) nav a:hover{
 	color: var(--color-efteling-red);
 }
 
 @media (min-width: 50em){
-	header div div button {
-		display:none;
+	/* hamburger menu */
+	header:nth-of-type(2) div div button {
+		display: none; 
 	}
 
-	nav{
-		position:static;
+	header:nth-of-type(2) nav{
+		position:static; /* geen hamburger menu meer -> links komen in nav bar te staan */
 		transform:none;
 		background:none;
 	}
 
-	nav ul{
+	header:nth-of-type(2) nav ul{
 		display: flex;
 		gap: 2em;
 	}
 
-	header nav a{
+	header:nth-of-type(2) nav a{
 		padding: 0 20px;
 		border-bottom: none;
 	}
 
-	header > div{
+	header:nth-of-type(2) > div{
 		max-width: 64em;
 	}
 }
@@ -347,22 +459,55 @@ header nav a:hover{
 /* FOOTER */
 /**********/
 
+/* ALGEMEEN */
+
 footer{
 	font-family: 'Open Sans', sans-serif;
-
+	background-color: white;
+	border-top: 1px solid var(--color-border);
 }
+
+footer a, footer p:nth-of-type(2){
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+footer a:hover{
+	color: var(--color-efteling-red);
+}
+
+input[type=text] {
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	border: 1px solid var(--color-border);
+	font-size: 1em;
+	font-family: 'open sans', sans-serif;
+	margin-top: 1em;
+	width: 100%;
+}
+
+input[type=submit] {
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin-top: 0.5em;
+}
+
+
+
+/* FOOTER OP KLEIN SCHERM */
 
 footer details {
-	padding: 1em 0;
+	padding: 1em 20px;
 	border-bottom: 1px solid var(--color-border);
-	max-width: 64em;
-	margin: 0 auto;
 }
 
+/* kopje en uitklap icon (+ of -) */
 footer details summary{
 	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
+	list-style: none;
 }
 
 footer details summary::after{
@@ -373,54 +518,87 @@ footer details[open] summary::after{
 	content: '-'
 }
 
+
+
+/* laat standaard icon niet meer zien */
 footer details summary::-webkit-details-marker {
 	display: none;
 }
 
-footer {
-	background-color: white;
-	border-top: 1px solid var(--color-border);
-}
-
-footer li{
+footer details li{
 	list-style: none;
 	text-decoration: none;
 	margin-top: 1em;
 }
 
-footer a{
-	text-decoration: none;
-	color: var(--color-text)
+footer > nav:nth-of-type(2){
+	display: none;
 }
 
-footer a:hover{
-	color: var(--color-efteling-red);
-}
+/* FOOTER OP GROOT SCHERM */
 
-input[type=submit] {
-	border: none;
-	cursor: pointer;
-	display: block;
-}
-
-summary {
-	list-style: none
-}
-
-@media (min-width: 900px){
+@media (min-width: 56.25em){
+	
+	/* zet nav in midden van scherm */
 	footer {
 		display: flex;
+		justify-content: center;
+		line-height: 1.75;
+		font-size: 1em;
 	}
 
-	footer details{
+	footer > nav:nth-of-type(1){
+		/* display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 64em; */
+
+
+		/* haalt nav voor klein scherm weg */
+		display: none;
+	}
+
+	footer > nav:nth-of-type(2){
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 64em;
+		padding: 20px;
+		
+	}
+
+	footer > nav:nth-of-type(2) ul, footer > nav:nth-of-type(2) div{
 		max-width: 30%;
+		list-style: none;
+		text-decoration: none;
+		margin-top: 1em;
+
+		font-size: 0.875em;
 	}
 
-	footer details summary::after, footer details[open] summary::after{
+
+	footer > nav:nth-of-type(2) ul li, footer > nav:nth-of-type(2) div p{
+		margin-top: 0.5em;
+		font-family: 'open sans', sans-serif;
+
+	}
+
+
+	footer > nav:nth-of-type(2) ul li:nth-of-type(1), footer > nav:nth-of-type(2) div p:nth-of-type(1){
+		font-weight: bold;
+		margin-top: 0;
+		
+	}
+
+	/* footer details{
+		max-width: 30%;
+	} */
+
+	/* icons weghalen op groot scherm */
+	/* footer details summary::after, footer details[open] summary::after{
 		content: '';
-	}
-
-	
+	} */
 }
 
 
@@ -455,8 +633,8 @@ summary {
 	transform: translate(-50%, -50%);
   	color: white;
 	z-index: 1;
-
-	width: 60%; /* breedte tekst fixen -> hoe?? */
+	width: 60%;
+	max-width: 32em;
 }
 
 @media (min-width: 48em){
@@ -481,7 +659,7 @@ summary {
 .index main > section:nth-of-type(2){
 	padding: 0 20px;
 	margin: 0 auto;
-	max-width: 500px;
+	max-width: 31.25em;
 }
 
 .index main > section:nth-of-type(2) > div {
@@ -497,11 +675,16 @@ summary {
 	padding: 20px;
 }
 
+.index main > section:nth-of-type(2) > div ul{
+	margin: 1em 0;
+}
+
 .index main > section:nth-of-type(2) > div li{
 	display: flex;
 	align-items: baseline;
 	gap: 1em;
 	margin-bottom: 5px;
+	font-size: 0.875em;
 	
 }
 
@@ -512,6 +695,7 @@ summary {
 
 .index main > section:nth-of-type(2) > div > img{
 	border-radius: 5px 5px 0 0;
+	
 }
 
 @media (min-width: 48em){
@@ -519,9 +703,9 @@ summary {
 		max-width: 64em;
 	}
 
+	/* content wordt naast elkaar gezet */
 	.index main > section:nth-of-type(2) > div {
 		flex-direction: row;
-
 	}
 
 	.index main > section:nth-of-type(2) > div > img {
@@ -530,8 +714,6 @@ summary {
 		display: inline-block;
 		align-self: center;
 		border-radius: 0;
-
-		
 	}
 }
 
@@ -540,20 +722,17 @@ summary {
 /* SECTION JUBILEUM */
 
 .index main > section:nth-of-type(3){
-	max-width: 500px;
+	max-width: 31.25em;
 	margin: 0 auto;
 	padding: 0 20px;
 }
-
 
 .index main > section:nth-of-type(3) > div{
 	display: flex;
 	flex-direction: column;
 	flex-basis: 50%;
 	gap: 20px;
-
 }
-
 
 
 .index main > section:nth-of-type(3) > div p{
@@ -595,9 +774,10 @@ summary {
 	justify-content: center;
 	padding: 0 20px;
 	margin: 0 auto;
-	max-width: 500px;
+	max-width: 31.25em;
 }
 
+/* card */
 .index main > div > section {
 	flex-basis: 33%;
 	border: 1px solid var(--color-border);
@@ -607,6 +787,7 @@ summary {
 	flex-direction: column;
 }
 
+/* tekst + button binnen een card */
 .index main > div div{
 	padding: 20px;
 	flex-grow: 1;
@@ -635,17 +816,6 @@ summary {
 
 
 
-section{
-	margin-bottom: 2em !important
-}
-
-@media (min-width: 48em){
-	section{
-		margin-bottom: 4em !important;
-	}
-}
-
-
 
 
 /*****************/
@@ -657,7 +827,7 @@ section{
 }
 
 @media (min-width: 48em){
-	.herfst p{
+	.herfst main p{
 		font-size: 1.25em;
 	}
 }
@@ -694,6 +864,7 @@ section{
 }
 
 /* https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
+/* scroll button */
 .herfst section:nth-of-type(1) a {
 	height: 50px;
 	width: 50px;
@@ -729,6 +900,7 @@ section{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
 }
 
 
@@ -747,8 +919,6 @@ section{
 	margin: 0 auto;
 }
 
-
-
 .herfst main > section:nth-of-type(2) p{
 	margin: 1em 0;
 }
@@ -757,22 +927,22 @@ section{
 	.herfst main > section:nth-of-type(2) div {
 		margin: 0 15%;
 	}
+	
 }
 
 
 /* COLLAGE SECTION */
+
 .herfst section:nth-of-type(3){
 	padding: 0 20px;
 	max-width: 64em;
 	margin: 0 auto;
 }
 
-
-
 .herfst main > section:nth-of-type(3){
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
 	grid-gap: 1em;
 }
 
@@ -786,7 +956,7 @@ section{
 @media (min-width: 48em){
 	.herfst main > section:nth-of-type(3){
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: auto auto;
 	}
 
 	.herfst main > section:nth-of-type(3) > img:nth-of-type(1){
@@ -826,21 +996,13 @@ section{
 
 .herfst section:nth-of-type(4){
 	position: relative;
-	
 }
 
+/* tekst + button */
 .herfst section:nth-of-type(4) > div > div{
-
 	padding: 0 20px;
-	/* onderstaande regels centreren h1 in midden. bron: https://www.w3schools.com/howto/howto_css_image_text.asp */
- 	
-	top: 5em;
-	/* top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%); */
 	z-index: 2;
 	text-align: center;
-
 }
 
 .herfst section:nth-of-type(4) > div {
@@ -848,7 +1010,6 @@ section{
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -857,7 +1018,7 @@ section{
 }
 
 .herfst section:nth-of-type(4) > div p {
-	margin: 1em 0;
+	margin-bottom: 1em;
 }
 
 .herfst section:nth-of-type(4) h2, section:nth-of-type(4) p{
@@ -870,8 +1031,6 @@ section{
 	object-fit: cover;
 	filter: brightness(70%);
 }
-
-
 
 .herfst section:nth-of-type(4) > a {
 	height: 50px;
@@ -916,6 +1075,18 @@ section{
 	width: 1em;
 }
 
+/* horizontaal lijntje onder titel */
+.herfst section:nth-of-type(4) h2::after{
+	content: '';
+	width: 100px;
+	height: 2px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0.5em auto;
+}
+
 
 
 @media (min-width: 48em) {
@@ -927,8 +1098,8 @@ section{
 	}
 	.herfst section:nth-of-type(4) > div > div{
 		width: 50%;
-		max-width: 500px;
-		}
+		max-width: 31.25em;
+	}
 }
 
 @media (min-width: 64em) {
@@ -939,3 +1110,7 @@ section{
 		font-size: 1.25em;
 	}
 }
+
+/* section:target {
+	background: hotpink;
+} */
