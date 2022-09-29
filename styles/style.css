@@ -30,17 +30,17 @@ a, summary {
 
 @font-face {
 	font-family: 'verner';
-	src: url('/assets/fonts/Verner.woff2') format('woff2');
+	src: url('../assets/fonts/Verner.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'ernestine';
-	src: url('/assets/fonts/ErnestineWeb.woff2') format('woff2');
+	src: url('../assets/fonts/ErnestineWeb.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'ernestine-bold';
-	src: url('/assets/fonts/ErnestineWeb-Bold.woff2') format('woff2');
+	src: url('../assets/fonts/ErnestineWeb-Bold.woff2') format('woff2');
 }
 
 
