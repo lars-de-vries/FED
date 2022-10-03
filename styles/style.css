@@ -540,7 +540,7 @@ footer details summary::-webkit-details-marker {
 footer details li{
 	list-style: none;
 	text-decoration: none;
-	margin-top: 1em;
+	margin-top: 1.25em;
 }
 
 footer > nav:nth-of-type(2){

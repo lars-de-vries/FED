@@ -110,13 +110,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-home-pagina.jpg" width="375px" alt="breakdown van de home pagina">
+
+  <img src="readme-images/breakdownschets-herfst-pagina.jpg" width="375px" alt="breakdown van de herfst pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="breakdown het menu">
 
 </details>
 
@@ -137,7 +136,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/herfst-pagina-voortgangsgesprek-1.png" width="375px" alt="voortgang herfst pagina">
 
 
-  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis van vorig jaar is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt. De huiswerkopdrachten die wij voor elke les dienen te maken helpen erg bij het toepassen van deze nieuwe technieken, door de powerpoints van deze opdrachten naast mijn werk te houden is het een stuk makkelijker om deze nieuwe dingen toe te passen.
+  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis van vorig jaar is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me redelijk wat moeite en hebben soms ook al tot flinke frustraties geleid.
+  
+  Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt. De huiswerkopdrachten die wij voor elke les dienen te maken helpen erg bij het toepassen van deze nieuwe technieken, door de powerpoints van deze opdrachten naast mijn werk te houden is het een stuk makkelijker om deze nieuwe dingen toe te passen.
+
+  Verder merk ik wel dat mijn document beter moet organiseren om het overzichtelijk te houden voor mijzelf. Op dit moment heb ik alles onder elkaar geschreven zonder eigenlijk een duidelijke structuur aan te houden, hierdoor merk ik dat ik nu al vaak moet zoeken om bepaalde code terug te vinden.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -147,6 +151,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+  - Problemen met GitHub -> wanneer ik mijn gehele map op GitHub wil zetten geeft het aan dat de bestanden te zwaar zijn om deze te kunnen uploaden -> hoe kan ik dit oplossen?
+  - Vragen naar een handige manier om CSS document overzichtelijk te houden.
+  - Op sommige buttons pakt de margin het tot de tekst van de button ipv de border van de button -> hoe zorg ik ervoor dat het tot de border gaat?
 
 
   ### Verslag van meeting
@@ -175,7 +183,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/herfst-pagina-voortgangsgesprek-2.png" width="375px" alt="voortgang herfst pagina">
 
-  Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed ondanks dat ik eigenlijk nog nooit met media queries heb gewerkt. Sommige punten kostte wel veel tijd om het precies naar wens te krijgen. Een voorbeeld hiervan was de responsive navbar, zonder de powerpoints van de huiswerkopdrachten was dit waarschijnlijk een stuk moeilijker geweest. Door rustig de verschillende stappen te volgen is het uiteindelijk toch gelukt om dit voor elkaar te krijgen, het eindresultaat ben ik ook erg tevreden mee!
+  Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Op bovenstaande screenshots is te zien hoe mijn twee pagina's er momenteel uit zien op groot scherm.
+  
+  Om eerlijk te zijn ging het responsive maken van deze pagina's over het algemeen best wel goed ondanks dat ik eigenlijk nog nooit met media queries heb gewerkt. Sommige punten kostte wel veel tijd om het precies naar wens te krijgen. Een voorbeeld hiervan was de responsive navbar, zonder de powerpoints van de huiswerkopdrachten was dit waarschijnlijk een stuk moeilijker geweest. Door rustig de verschillende stappen te volgen is het uiteindelijk toch gelukt om dit voor elkaar te krijgen, het eindresultaat ben ik ook erg tevreden mee!
+  
+  Als ik kijk naar de hoeveelheid werk wat ik nog moet verrichten denk ik dat ik erg goed op schema lig. De pagina's zien er naar mijn mening al redelijk 'af' uit waardoor ik mij vanaf nu kan richten op het toevoegen van kleine dingen en het verbeteren van hetgeen wat ik tot nu toe heb gemaakt.
 
 
   ### Agenda voor meeting
@@ -186,7 +198,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Buttons -> mag je hier classes voor gebruiken?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hieronder zijn de belangrijkste uitkomsten van het voortgangsgesprek op een rijtje gezet:
 
   - Omdat ik op klein scherm details en summary heb gebruikt binnen mijn footer is de beste manier om deze responsive te maken inderdaad door 2 verschillende footers te maken (klein scherm met details & summary, groot scherm zonder)
   - Lijntje toevoegen kan op meerdere manieren -> makkelijkste manier is om ::after te gebruiken.
@@ -253,7 +265,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/herfst-pagina-voortgangsgesprek-3.png" width="375px" alt="voortgang herfst pagina">
 
   De afgelopen weken heb ik mij vooral gericht op het volledig responsive maken van de website, zo
-  Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessability van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
+  Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessability van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, dit zorgde eerst voor een hoop hoofdpijn maar uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
   
   heze week heb ik mij voornamelijk gericht op accessability 
 
