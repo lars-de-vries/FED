@@ -59,6 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Concentratie (ballon)
+  <img src="readme-images/toegankelijkheidstest-met-ballon.jpg" width="375px" alt="toegankelijkheidstest met ballon">
   Wanneer je werd afgeleid door de ballon was het heel lastig om tegelijkertijd te focussen op de informatie die op je beeldscherm staat. Hierdoor vermijd je eigenlijk direct hele lappen tekst. Het helpt enorm dat er plaatjes op de website staan zodat je wel onthoudt waar je was gebleven en wat je op de huidige pagina kan vinden.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
@@ -85,7 +86,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   Voor gebruikers met zo'n beperking is het daarom wenselijk dat de knoppen een groot formaat hebben en genoeg ruimte van elkaar verwijderd zijn zodat er niet perongeluk op een verkeerde knop wordt geklikt.
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+  #### Visueel (brillen, contrast, kleurenblind, dark/light)
+  <img src="readme-images/toegankelijkheidstest-met-bril.jpg" width="375px" alt="toegankelijkheidstest met bril">
   Hier korte omschrijving (met indien nodig afbeeldingen)
   Tijdens de toegankelijkheidstest zijn allereerst verschillende vormen van kleurenblindheid onderzocht. Bij al deze vormen was de content op de website goed te lezen. Dit had te maken met dat er door de hele website heen voldoende contrast werd gebruikt. Grote problemen kwamen naar voren bij het gebruik van de verschillende brillen (zwarte vlekken & wazig zicht), hierbij was het erg lastig om bijvoorbeeld je muis te volgen en om knoppen te vinden op het scherm. 
   
@@ -126,9 +128,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-1.jpg" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-1.png" width="375px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-1.jpg" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-1.png" width="375px" alt="voortgang herfst pagina">
 
 
   Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis van vorig jaar is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt. De huiswerkopdrachten die wij voor elke les dienen te maken helpen erg bij het toepassen van deze nieuwe technieken, door de powerpoints van deze opdrachten naast mijn werk te houden is het een stuk makkelijker om deze nieuwe dingen toe te passen.
@@ -165,9 +167,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-2.jpg" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-2.png" width="375px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-2.jpg" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-2.png" width="375px" alt="voortgang herfst pagina">
 
   Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed ondanks dat ik eigenlijk nog nooit met media queries heb gewerkt. Sommige punten kostte wel veel tijd om het precies naar wens te krijgen. Een voorbeeld hiervan was de responsive navbar, zonder de powerpoints van de huiswerkopdrachten was dit waarschijnlijk een stuk moeilijker geweest. Door rustig de verschillende stappen te volgen is het uiteindelijk toch gelukt om dit voor elkaar te krijgen, het eindresultaat ben ik ook erg tevreden mee!
 
@@ -242,9 +244,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-3.jpg" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-3.png" width="375px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-3.jpg" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-3.png" width="375px" alt="voortgang herfst pagina">
 
   De afgelopen weken heb ik mij vooral gericht op het volledig responsive maken van de website, zo
   Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessability van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
@@ -252,7 +254,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   heze week heb ik mij voornamelijk gericht op accessability 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
   Mijn groepje had deze week geen punten die zij wilden behandelen tijdens het laatste voortgangsgesprek. Om deze reden worden hieronder alleen de punten opgesomd die ik tijdens dit gesprek wilde bespreken met de studentassistenten:
 
   - Problemen met GitHub -> custom fonts laden hier niet juist in waardoor alleen de laatste fallback font wordt weergegeven -> hoe kan ik dit oplossen?
@@ -294,6 +295,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   Om eerlijk te zijn is eigenlijk heel veel wat ik wilde maken uiteindelijk wel gelukt, sommige dingen natuurlijk wel met iets meer moeite dan de andere dingen. Bijvoorbeeld het volledig responsive maken van de website heeft op sommige punten veel tijd gekost maar uiteindelijk ben ik toch erg tevreden met het resultaat.
+  Ik heb wel gekozen om sommige lastige dingen van de Efteling website niet na te maken omdat ik bang was hier teveel tijd aan kwijt te zijn.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
