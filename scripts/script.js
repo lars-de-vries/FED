@@ -13,15 +13,6 @@ function toggleMenu() {
   } else{
     hamburgerIcon.src="assets/hamburger-menu.svg";
   }
-
-
-
-  // var navList = document.querySelector("header:nth-of-type(2) nav ul");
-  // navList.classList.toggle("toonList");
-
-
-  // var main = document.querySelector("main");
-  // main.classList.toggle("hideMain");
 };
 
 

@@ -126,9 +126,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-1" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-1.jpg" width="375px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-1" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-1.jpg" width="375px" alt="voortgang herfst pagina">
 
 
   Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt.
@@ -166,9 +166,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-2" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-2.jpg" width="375px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-2" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-2.jpg" width="375px" alt="voortgang herfst pagina">
 
   Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed, sommige punten kostte wel veel tijd om het precies naar wens te krijgen.
 
