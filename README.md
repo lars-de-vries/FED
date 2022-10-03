@@ -39,12 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Namaken van de Efteling website: https://www.efteling.com/nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina: https://www.efteling.com/nl 
-  <img src="readme-images/screenshot-home-pagina.jpg" width="375px" alt="home pagina efteling">
+  Home pagina: https://www.efteling.com/nl
+
+  <img src="readme-images/screenshot-home-pagina.jpg" width="175px" alt="home pagina efteling">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Herfst pagina: https://www.efteling.com/nl/park/seizoenen/herfst
-  <img src="readme-images/screenshot-herfst-pagina.jpg" width="375px" alt="abonnement pagina efteling">
+
+  <img src="readme-images/screenshot-herfst-pagina.jpg" width="175px" alt="abonnement pagina efteling">
  
 </details>
 
@@ -60,6 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Concentratie (ballon)
   <img src="readme-images/toegankelijkheidstest-met-ballon.jpg" width="375px" alt="toegankelijkheidstest met ballon">
+  
   Wanneer je werd afgeleid door de ballon was het heel lastig om tegelijkertijd te focussen op de informatie die op je beeldscherm staat. Hierdoor vermijd je eigenlijk direct hele lappen tekst. Het helpt enorm dat er plaatjes op de website staan zodat je wel onthoudt waar je was gebleven en wat je op de huidige pagina kan vinden.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
@@ -88,6 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light)
   <img src="readme-images/toegankelijkheidstest-met-bril.jpg" width="375px" alt="toegankelijkheidstest met bril">
+  
   Hier korte omschrijving (met indien nodig afbeeldingen)
   Tijdens de toegankelijkheidstest zijn allereerst verschillende vormen van kleurenblindheid onderzocht. Bij al deze vormen was de content op de website goed te lezen. Dit had te maken met dat er door de hele website heen voldoende contrast werd gebruikt. Grote problemen kwamen naar voren bij het gebruik van de verschillende brillen (zwarte vlekken & wazig zicht), hierbij was het erg lastig om bijvoorbeeld je muis te volgen en om knoppen te vinden op het scherm. 
   
