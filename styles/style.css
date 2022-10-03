@@ -28,6 +28,8 @@ a, summary {
 
 }
 
+
+
 @font-face {
 	font-family: 'verner';
 	src: url('../assets/fonts/Verner.woff2') format('woff2');
@@ -63,8 +65,10 @@ a, summary {
 }
 
 
+/*https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html*/
+/* wanneer op scroll button wordt geklikt wordt er nu smooth gescrollt naar juiste section */
 html{
-	scroll-behavior: smooth; /*https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html*/
+	scroll-behavior: smooth;
 }
 
 body {
@@ -76,10 +80,21 @@ img {
 	width: 100%;
 }
 
+section{
+	margin-bottom: 2em !important
+}
+
+@media (min-width: 48em){
+	section{
+		margin-bottom: 4em !important;
+	}
+}
+
 
 /* BUTTONS */
 
-.button-red {
+/* primary button */
+.button-primary {
 	color: white;
 	padding: 14px 20px 12px 20px;
 	background-color: var(--color-efteling-red);
@@ -92,7 +107,7 @@ img {
 	position: relative;
 }
 
-.button-red::before{
+.button-primary::before{
 	border-radius: 5px;
     border: 2px solid var(--color-button-outline-red);
 	position: absolute;
@@ -105,16 +120,17 @@ img {
 	transition: 1s;
 }
 
-.button-red:hover:before{
+.button-primary:hover:before{
 	border: 2px solid var(--color-background);
 }
 
-.button-red:hover {
+.button-primary:hover {
 	background-color: var(--color-button-outline-red);
 }
 
 
-.button-white {
+/* secondary button */
+.button-secondary {
 	color: var(--color-efteling-red);
 	padding: 14px 20px 12px 20px;
 	background-color: white;
@@ -129,7 +145,7 @@ img {
 	position: relative;
 }
 
-.button-white::before {
+.button-secondary::before {
 	border-radius: 5px;
     border: 2px solid var(--color-border);
 	position: absolute;
@@ -141,14 +157,16 @@ img {
 	bottom: 4px;
 	transition: 0.8s;
 }
-.button-white:hover:before{
+.button-secondary:hover:before{
 	border: 2px solid var(--color-efteling-red);
 }
 
-.button-white:hover{
+.button-secondary:hover{
 	background-color: var(--color-border);
 }
 
+
+/* outline button */
 .button-outline {
 	color: white;
 	padding: 10px 19px 8px;
@@ -169,15 +187,9 @@ img {
 	background: var(--color-button-outline-red);
 }
 
-section{
-	margin-bottom: 2em !important
-}
 
-@media (min-width: 48em){
-	section{
-		margin-bottom: 4em !important;
-	}
-}
+
+/* TYPOGRAFIE */
 
 h1 {
 	font-size: 2.25em;
@@ -202,9 +214,9 @@ h3 {
 
 h4 {
 	color: var(--color-efteling-red);
-	font-size: 1em;
 	font-family: 'ernestine-bold', sans-serif;
 	font-weight: 700;
+	font-size: 1em;
 }
 
 p {
@@ -306,6 +318,8 @@ header:nth-of-type(2) > div > a:nth-of-type(2):focus {
 	transform: translatey(100%);
 }
 
+
+
 header:nth-of-type(2) {
 	background-color: white;
 	position: sticky;
@@ -340,12 +354,12 @@ header:nth-of-type(2) > div > div {
 }
 
 /* search icon */
-header:nth-of-type(2) div div img{
+header:nth-of-type(2) > div > div img{
 	height: 1.2em;
 }
 
 /* hamburger menu met tekst */
-header:nth-of-type(2) div div button{
+header:nth-of-type(2) > div > div button{
 	background-color: white;
 	display: flex;
 	align-items:center;
@@ -357,13 +371,12 @@ header:nth-of-type(2) div div button{
 	font-size: 1em;
 	color: var(--color-text);
 }
-header:nth-of-type(2) div div button:hover {
+header:nth-of-type(2) > div > div button:hover {
 	cursor: pointer;
 }
-header:nth-of-type(2) div div button img {
+header:nth-of-type(2) > div > div button img {
 	width: 2em;
 }
-
 
 
 header:nth-of-type(2) nav{ 
@@ -407,6 +420,20 @@ header:nth-of-type(2) nav a:hover{
 	color: var(--color-efteling-red);
 }
 
+
+/* haalt menu tekst weg */
+header:nth-of-type(2) > div > div p{
+	display: none;
+}
+
+@media (min-width: 19em){
+	/* laat menu tekst zien */
+	header:nth-of-type(2) > div > div p{
+		display: block;
+		font-family: 'open sans', sans-serif;
+	}
+}
+
 @media (min-width: 50em){
 	/* hamburger menu */
 	header:nth-of-type(2) div div button {
@@ -414,9 +441,9 @@ header:nth-of-type(2) nav a:hover{
 	}
 
 	header:nth-of-type(2) nav{
-		position:static; /* geen hamburger menu meer -> links komen in nav bar te staan */
-		transform:none;
-		background:none;
+		position: static; /* geen hamburger menu meer -> links komen in nav bar te staan */
+		transform: none;
+		background: none;
 	}
 
 	header:nth-of-type(2) nav ul{
@@ -433,6 +460,8 @@ header:nth-of-type(2) nav a:hover{
 		max-width: 64em;
 	}
 }
+
+
 
 
 
@@ -542,7 +571,6 @@ footer > nav:nth-of-type(2){
 		width: 100%;
 		max-width: 64em;
 		padding: 20px;
-		
 	}
 
 	footer > nav:nth-of-type(2) ul, footer > nav:nth-of-type(2) div{
@@ -589,33 +617,30 @@ footer > nav:nth-of-type(2){
 	overflow: hidden;
 }
 
+/* container om h1 & button -> centreert deze content*/
 .index main > section:nth-of-type(1) > div{
 	position: absolute;
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
-
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
   	color: white;
 	z-index: 1;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* width: 60%;
-	max-width: 32em; */
 }
 
 .index main > section:nth-of-type(1) h1 {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.75em;
 	width: 80%;
 	max-width: 10em;
 }
 
+.index main > section:nth-of-type(1) a {
+	margin: 0 20px;
+}
 
 @media (min-width: 48em){
 	.index main > section:nth-of-type(1) > img{
@@ -625,11 +650,6 @@ footer > nav:nth-of-type(2){
 		transform: scale(1);
 	}
 }
-
-
-
-/* * { border: 1px solid red !important; } */
-
 
 
 
@@ -651,15 +671,15 @@ footer > nav:nth-of-type(2){
 	display: flex;
 }
 
-.index main > section:nth-of-type(2) > div div{
+.index main > section:nth-of-type(2) > div > div{
 	padding: 20px;
 }
 
-.index main > section:nth-of-type(2) > div ul{
+.index main > section:nth-of-type(2) > div > div ul{
 	margin: 1em 0;
 }
 
-.index main > section:nth-of-type(2) > div li{
+.index main > section:nth-of-type(2) > div > div li{
 	display: flex;
 	align-items: baseline;
 	gap: 1em;
@@ -817,18 +837,18 @@ footer > nav:nth-of-type(2){
 
 /* HERO SECTION */
 
-.herfst video {
-	width: 100%;
-	height: 25em;
-	object-fit: cover;
-}
-
 .herfst section:nth-of-type(1){
 	position: relative;
 	text-align: center;
 }
 
-.herfst h1{
+.herfst section:nth-of-type(1) video {
+	width: 100%;
+	height: 25em;
+	object-fit: cover;
+}
+
+.herfst section:nth-of-type(1) h1{
 	position: absolute;
 	color: white;
 	/* onderstaande regels centreren h1 in midden. bron: https://www.w3schools.com/howto/howto_css_image_text.asp */
@@ -837,11 +857,6 @@ footer > nav:nth-of-type(2){
   	transform: translate(-50%, -50%);
 }
 
-.herfst section:nth-of-type(1) a img{
-	height: 1em;
-	width: 1em;
-	
-}
 
 /* https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
 /* scroll button */
@@ -868,6 +883,7 @@ footer > nav:nth-of-type(2){
 	background-color: var(--color-background);
 }
 
+/* scroll button inside outline */
 .herfst section:nth-of-type(1) a::before{
 	height: 10px;
 	width: 10px;
@@ -881,20 +897,27 @@ footer > nav:nth-of-type(2){
 	transform: translate(-50%, -50%);
 }
 
+/* scroll button arrow icon */
+.herfst section:nth-of-type(1) a img{
+	height: 1em;
+	width: 1em;
+}
+
+
 
 
 /* HERFST SECTION */
-
-.herfst main > section:nth-of-type(2) h2{
-	line-height: 1.5em;
-	margin: 0 10%;
-}
 
 .herfst main > section:nth-of-type(2) {
 	padding: 0 20px;
 	max-width: 64em;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.herfst main > section:nth-of-type(2) h2{
+	line-height: 1.5em;
+	margin: 0 10%;
 }
 
 .herfst main > section:nth-of-type(2) p{
@@ -905,8 +928,9 @@ footer > nav:nth-of-type(2){
 	.herfst main > section:nth-of-type(2) div {
 		margin: 0 15%;
 	}
-	
 }
+
+
 
 
 /* COLLAGE SECTION */
@@ -917,10 +941,11 @@ footer > nav:nth-of-type(2){
 	margin: 0 auto;
 }
 
+/* grid klein scherm -> 2 kolommen, 4 rijen */
 .herfst main > section:nth-of-type(3){
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: repeat(4, auto);
 	grid-gap: 1em;
 }
 
@@ -931,9 +956,11 @@ footer > nav:nth-of-type(2){
 	grid-row-end: 3;
 }
 
+
+/* grid groot scherm -> 6 kolommen, 2 rijen */
 @media (min-width: 48em){
 	.herfst main > section:nth-of-type(3){
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: auto auto;
 	}
 
@@ -969,20 +996,13 @@ footer > nav:nth-of-type(2){
 
 
 
-
 /* LANGNEK SECTION */
 
 .herfst section:nth-of-type(4){
 	position: relative;
 }
 
-/* tekst + button */
-.herfst section:nth-of-type(4) > div > div{
-	padding: 0 20px;
-	z-index: 2;
-	text-align: center;
-}
-
+/* container voor tekst + button -> moet volledige grote van img innemen */
 .herfst section:nth-of-type(4) > div {
 	max-width: 64em;
 	margin: 0 auto;
@@ -995,11 +1015,19 @@ footer > nav:nth-of-type(2){
 	right: 0;
 }
 
+/* tekst + button */
+.herfst section:nth-of-type(4) > div > div{
+	padding: 0 20px;
+	z-index: 2;
+	text-align: center;
+}
+
+
 .herfst section:nth-of-type(4) > div p {
 	margin-bottom: 1em;
 }
 
-.herfst section:nth-of-type(4) h2, section:nth-of-type(4) p{
+.herfst section:nth-of-type(4) h2, .herfst section:nth-of-type(4) p{
 	color: white;
 }
 
@@ -1017,11 +1045,9 @@ footer > nav:nth-of-type(2){
 	border-radius: 50%;
 	border: 1px solid var(--color-border);
 	background-color: white;
-
 	position: absolute;
 	z-index: 9999;
 	top: 0;
-
 	left: 50%;
 	right: 50%;
 	transform: translate(-50%, -50%);
@@ -1063,7 +1089,6 @@ footer > nav:nth-of-type(2){
 	justify-content: center;
 	margin: 0.5em auto;
 }
-
 
 
 @media (min-width: 48em) {

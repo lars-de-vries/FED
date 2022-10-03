@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -131,7 +131,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/herfst-pagina-voortgangsgesprek-1.jpg" width="375px" alt="voortgang herfst pagina">
 
 
-  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt.
+  Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis van vorig jaar is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me veel moeite en tijd. Toch heb ik in een korte tijd ook al veel nieuwe dingen geleerd, onder andere grid had ik hiervoor nog niet eerder gebruikt. De huiswerkopdrachten die wij voor elke les dienen te maken helpen erg bij het toepassen van deze nieuwe technieken, door de powerpoints van deze opdrachten naast mijn werk te houden is het een stuk makkelijker om deze nieuwe dingen toe te passen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -151,7 +151,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Problemen met webite op GitHub zetten -> studentassitent heeft hierbij geholpen.
   - Studentassistent heeft GitHub Desktop voor mij geinstalleerd en juist ingesteld -> hier zie ik alle aanpassingen die ik heb gemaakt, deze kan ik vervolgens op GitHub zetten door eerst op 'commit to main' en vervolgens op 'push' te klikken.
 
-
 </details>
 
 
@@ -170,7 +169,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/herfst-pagina-voortgangsgesprek-2.jpg" width="375px" alt="voortgang herfst pagina">
 
-  Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed, sommige punten kostte wel veel tijd om het precies naar wens te krijgen.
+  Deze week heb ik ontzettend veel werk verzet. Vorige week heb ik de belangrijkste opmaak van mijn paginas voor klein scherm gemaakt. Deze week heb ik mij vervolgens meer gericht op het responsive maken van de website. Om eerlijk te zijn ging dit over het algemeen best wel goed ondanks dat ik eigenlijk nog nooit met media queries heb gewerkt. Sommige punten kostte wel veel tijd om het precies naar wens te krijgen. Een voorbeeld hiervan was de responsive navbar, zonder de powerpoints van de huiswerkopdrachten was dit waarschijnlijk een stuk moeilijker geweest. Door rustig de verschillende stappen te volgen is het uiteindelijk toch gelukt om dit voor elkaar te krijgen, het eindresultaat ben ik ook erg tevreden mee!
 
 
   ### Agenda voor meeting
@@ -243,24 +242,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  <img src="readme-images/home-pagina-voortgangsgesprek-3.jpg" width="375px" alt="voortgang home pagina">
+
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-3.jpg" width="375px" alt="voortgang herfst pagina">
+
+  De afgelopen weken heb ik mij vooral gericht op het volledig responsive maken van de website, zo
+  Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessability van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
+  
+  heze week heb ik mij voornamelijk gericht op accessability 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+  Mijn groepje had deze week geen punten die zij wilden behandelen tijdens het laatste voortgangsgesprek. Om deze reden worden hieronder alleen de punten opgesomd die ik tijdens dit gesprek wilde bespreken met de studentassistenten:
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Problemen met GitHub -> custom fonts laden hier niet juist in waardoor alleen de laatste fallback font wordt weergegeven -> hoe kan ik dit oplossen?
+  - Afbeeldingen uit de readme laden ook niet juist in op GitHub -> hoe kan ik dit oplossen?
+  - Ik heb twee headers gebruikt -> is dit juist of moet dit op een andere manier?
+  - HTML/CSS code doorlopen op fouten.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Problemen met GitHub zijn verholpen -> fonts worden nu ook via GitHub goed weergegeven.
+  - grid repeat in plaats van dingen meerdere keren herhalen -> staat iets netter in de code
+  - nagaan of elke div die ik heb gebruikt echt noodzakelijk is
+
+  - DRIE KOLOMMEN -> div veranderen in article?
 
 </details>
 
@@ -279,7 +286,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar,  accesibillity en nog veel meer. 
+  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar,  accesibillity en nog veel meer. Ook had ik in het begin moeite met het niet kunnen gebruiken van classes, vorig jaar gooide ik namenlijk echt overal een class op om deze elementen vervolgens in CSS te kunnen selecteren. Door verplicht andere selectoren te gebruiken werd ik in het begin vaak erg gefrustreerd, maar nu aan het einde van dit vak merk ik juist hoe ontzettend handig het is.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
@@ -296,7 +303,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
 
-<details open>
+<details>
   <summary>continu bijhouden terwijl je werkt</summary>
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
