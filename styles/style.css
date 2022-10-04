@@ -767,6 +767,7 @@ main{
 	animation-name: laser;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 	z-index: 999;
 }
 
@@ -785,6 +786,7 @@ main{
 	animation-name: laser;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 	z-index: 999;
 }
 

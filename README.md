@@ -265,16 +265,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/herfst-pagina-voortgangsgesprek-3.png" width="375px" alt="voortgang herfst pagina">
 
-  De afgelopen weken heb ik mij vooral gericht op het volledig responsive maken van de website, zo
-  Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessability van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, dit zorgde eerst voor een hoop hoofdpijn maar uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
+  De afgelopen weken heb ik mij vooral gericht op maken van de layout van de twee pagina's en het volledig responsive maken van de website. Door dit al te hebben gedaan is het belangrijkste gedeelte van de website eigenlijk al af. Ik had deze week nog wat meer dingen willen toevoegen aan de website, uiteindelijk ben ik hier niet echt aan toegekomen omdat ik het vrij druk had met andere vakken. Om deze reden heb ik gekozen om mij voornamelijk te richten op de kleinere details en op de accessibility van de website. Zo heb ik onder andere de focus & hover states van alle buttons duidelijker gemaakt, een skip to content knop toegevoegd en het een stuk makkelijker gemaakt om door de website heen te tabben. Hierbij liep ik eerst wel aan tegen het tabben door een menu, dit zorgde eerst voor een hoop hoofdpijn maar uiteindelijk is dit toch gelukt en is de website goed te gebruiken met alleen een toetsenbord.
   
-  heze week heb ik mij voornamelijk gericht op accessability 
 
   ### Agenda voor meeting
   Mijn groepje had deze week geen punten die zij wilden behandelen tijdens het laatste voortgangsgesprek. Om deze reden worden hieronder alleen de punten opgesomd die ik tijdens dit gesprek wilde bespreken met de studentassistenten:
 
   - Problemen met GitHub -> custom fonts laden hier niet juist in waardoor alleen de laatste fallback font wordt weergegeven -> hoe kan ik dit oplossen?
-  - Afbeeldingen uit de readme laden ook niet juist in op GitHub -> hoe kan ik dit oplossen?
+  - Afbeeldingen uit de readme laden ook niet in op GitHub -> hoe kan ik dit oplossen?
   - Ik heb twee headers gebruikt -> is dit juist of moet dit op een andere manier?
   - HTML/CSS code doorlopen op fouten.
 
@@ -299,21 +297,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+
+  Home pagina (op klein & groot formaat scherm)
+
+  <img src="readme-images/eindresultaat-home-klein" width="175px" alt="eindresultaat home pagina op klein scherm">
+  <img src="readme-images/eindresultaat-home-groot" width="375px" alt="eindresultaat home pagina op groot scherm">
+
+
+
+  Herfst pagina (op klein & groot formaat scherm)
+  <img src="readme-images/eindresultaat-herfst-klein" width="175px" alt="eindresultaat herfst pagina op klein scherm">
+  <img src="readme-images/eindresultaat-herfst-groot" width="375px" alt="eindresultaat herfst pagina op groot scherm">
+
+
+
+
+  Klik op deze afbeelding op de home pagina van mijn website voor een kleine easteregg!
+
+  <img src="readme-images/70-jaar-efteling-pardoes.jpg" width="175px" alt="70 jaar Efteling Pardoes">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar,  accesibillity en nog veel meer. Ook had ik in het begin moeite met het niet kunnen gebruiken van classes, vorig jaar gooide ik namenlijk echt overal een class op om deze elementen vervolgens in CSS te kunnen selecteren. Door verplicht andere selectoren te gebruiken werd ik in het begin vaak erg gefrustreerd, maar nu aan het einde van dit vak merk ik juist hoe ontzettend handig het is.
+  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar, accessibility en nog veel meer. Ook had ik in het begin moeite met het niet kunnen gebruiken van classes, vorig jaar gooide ik namenlijk echt overal een class op om deze elementen vervolgens in CSS te kunnen selecteren. Door verplicht andere selectoren te gebruiken werd ik in het begin vaak erg gefrustreerd, maar nu aan het einde van dit vak merk ik juist hoe ontzettend handig het is.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   Om eerlijk te zijn is eigenlijk heel veel wat ik wilde maken uiteindelijk wel gelukt, sommige dingen natuurlijk wel met iets meer moeite dan de andere dingen. Bijvoorbeeld het volledig responsive maken van de website heeft op sommige punten veel tijd gekost maar uiteindelijk ben ik toch erg tevreden met het resultaat.
   Ik heb wel gekozen om sommige lastige dingen van de Efteling website niet na te maken omdat ik bang was hier teveel tijd aan kwijt te zijn.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
@@ -329,6 +344,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. bron 1
   2. bron 2
-  3. ...
+  3. https://css-tricks.com/forums/topic/transform-rotated-element-fixed-to-the-right-help/
 
 </details>
