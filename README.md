@@ -272,11 +272,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   Hieronder zijn de belangrijkste uitkomsten van het voortgangsgesprek op een rijtje gezet:
 
-  - Problemen met GitHub zijn verholpen -> fonts worden nu ook via GitHub goed weergegeven.
-  - grid repeat in plaats van dingen meerdere keren herhalen -> staat iets netter in de code
-  - nagaan of elke div die ik heb gebruikt echt noodzakelijk is
-
-  - DRIE KOLOMMEN -> div veranderen in article?
+  - Problemen met GitHub zijn verholpen -> fonts worden nu ook via GitHub goed weergegeven & afbeeldingen in de readme zijn ook te zien.
+  - Grid repeat gebruiken in plaats van dingen meerdere keren herhalen -> staat iets netter in de code.
+  - Nagaan of elke div die ik heb gebruikt echt noodzakelijk is.
+  - Als ik klaar ben met de belangrijkste taken kan ik kijken naar extra dingen zoals het nieuwsbrief formulier laten werken.
 
 </details>
 
@@ -342,5 +341,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. https://www.w3schools.com/howto/howto_css_image_text.asp
   2. https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html
   3. https://css-tricks.com/forums/topic/transform-rotated-element-fixed-to-the-right-help/
+  4. & uiteraard de docent en studentassistenten!
 
 </details>
