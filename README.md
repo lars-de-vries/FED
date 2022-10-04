@@ -300,21 +300,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Home pagina (op klein & groot formaat scherm)
 
-  <img src="readme-images/eindresultaat-home-klein" width="175px" alt="eindresultaat home pagina op klein scherm">
-  <img src="readme-images/eindresultaat-home-groot" width="375px" alt="eindresultaat home pagina op groot scherm">
+  <img src="readme-images/eindresultaat-home-klein.png" width="175px" alt="eindresultaat home pagina op klein scherm">
+  <img src="readme-images/eindresultaat-home-groot.png" width="375px" alt="eindresultaat home pagina op groot scherm">
 
 
 
   Herfst pagina (op klein & groot formaat scherm)
-  <img src="readme-images/eindresultaat-herfst-klein" width="175px" alt="eindresultaat herfst pagina op klein scherm">
-  <img src="readme-images/eindresultaat-herfst-groot" width="375px" alt="eindresultaat herfst pagina op groot scherm">
+  <img src="readme-images/eindresultaat-herfst-klein.png" width="175px" alt="eindresultaat herfst pagina op klein scherm">
+  <img src="readme-images/eindresultaat-herfst-groot.png" width="375px" alt="eindresultaat herfst pagina op groot scherm">
 
 
 
 
   Klik op deze afbeelding op de home pagina van mijn website voor een kleine easteregg!
 
-  <img src="readme-images/70-jaar-efteling-pardoes.jpg" width="175px" alt="70 jaar Efteling Pardoes">
+  <img src="readme-images/70-jaar-efteling-pardoes.png" width="175px" alt="70 jaar Efteling Pardoes">
 
 
 
