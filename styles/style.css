@@ -732,12 +732,85 @@ footer > nav:nth-of-type(2){
 	flex-direction: column;
 	flex-basis: 50%;
 	gap: 20px;
+
 }
 
 
-.index main > section:nth-of-type(3) > div p{
+.index main > section:nth-of-type(3) > div > div:nth-of-type(2) p{
 	margin: 10px 0;
 }
+
+
+
+
+
+
+.index section:nth-of-type(3) > div > div:first-of-type{
+	position: relative;
+}
+
+/* zorgt ervoor dat lasers het scherm niet groter maken */
+main{
+	overflow: hidden;
+}
+
+.laser-links{
+	position: absolute;
+	left: 73%;
+	top: 58%;
+	width: 3px;
+	height: 1000%;
+	background: red;
+	box-shadow: 0 0 10px 1px red;
+	border-radius: 20px;
+
+	animation-name: laser;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	z-index: 999;
+}
+
+
+.laser-rechts{
+	position: absolute;
+	left: 77%;
+	top: 57%;
+	width: 3px;
+	height: 1000%;
+	background: red;
+	border-radius: 20px;
+
+	box-shadow: 0 0 10px 1px red;
+
+	animation-name: laser;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	z-index: 999;
+}
+
+@keyframes laser {
+	0% {
+		transform: rotate(-10deg);
+		transform-origin: top;
+	}
+	50% {
+		transform: rotate(110deg);
+		transform-origin: top;
+	}
+	100% {
+		transform: rotate(-10deg);
+		transform-origin: top;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 48em){
@@ -750,14 +823,15 @@ footer > nav:nth-of-type(2){
 		align-items: center;
 	}
 
-	.index main > section:nth-of-type(3) > div img{
+	.index main > section:nth-of-type(3) > div > div{
 		width: 50%;
 		height: 100%;
 	}
 
-	.index main > section:nth-of-type(3) > div div{
+	.index main > section:nth-of-type(3) > div > div:nth-of-type(2){
 		padding-right: 20px;
 	}
+
 }
 
 

@@ -70,14 +70,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  Er zijn verschillende paginas van de Efteling website getest met een screenreader. Wat voornamelijk opviel was dat je heel lang moet wachten, je kan niet snel door de pagina navigeren omdat je alles moet aanhoren. Verder hoor je bij elk element wat voor HTML tag dit element heeft.
+  Er zijn verschillende pagina's van de Efteling website getest met een screenreader. Wat voornamelijk opviel was dat je heel lang moet wachten, je kan niet snel door de pagina navigeren omdat je alles moet aanhoren. Verder hoor je bij elk element wat voor HTML tag dit element heeft.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   Kritisch kijken naar welke content je wel en niet op de pagina wilt laten zien, overbodige informatie kan worden weggelaten. Verder is het ontzettend belangrijk om te letten op de juiste HTML tags zodat het duidelijk is wat wat is. Als laatste is het van belang om afbeeldingen een duidelijke 'alt' te geven zodat blinden/slechtzienden zich kunnen voortstellen wat er op de afbeeldingen te zien is.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  De website is goed te besturen met behulp van alleen een toetsenbord. Het enige probleem waar tegenaan werd gelopen was dat je bij een nieuwe pagina steeds weer door de hele navigatie heen moet. De website heeft een hele uitgebreide navigatie met meerdere uitklapmenu's. Ik heb deze test slechts enkele minuten uitgevoerd maar werd in deze korte tijd al helemaal gek dat ik continu opnieuw door de navigatie moest gaan.
+  De website is goed te besturen met behulp van alleen een toetsenbord. Het enige probleem waar tegenaan werd gelopen was dat je bij een nieuwe pagina steeds weer door de hele navigatie heen moet. De website heeft een hele uitgebreide navigatie met meerdere uitklapmenu's. Ik heb deze test slechts enkele minuten uitgevoerd maar werd in deze korte tijd al helemaal gek dat ik continu opnieuw door de navigatie moest gaan, dit is een probleem dat zeker opgelost dient te worden.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   Het bovenstaande probleem zou kunnen worden opgelost door een knop toe te voegen met 'Skip to content'/'Ga naar de inhoud'. Door dit toe te voegen kunnen gebruikers de navigatie overslaan en scheelt dit een hoop tijd.
@@ -86,8 +86,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier korte omschrijving (met indien nodig afbeeldingen)
   Bevindingen elastiekjes: Wanneer je nog vinger vrij hebt dan is het nogsteeds gemakkelijk om door de website heen te navigeren. Pas wanneer je helemaal geen vingers meer kan gebruiken zorgt dit voor problemen. Wanneer dit het geval is kan je niet meer makkelijk op kleine knoppen klikken of klik je bijvoorbeeld op de verkeerde knop wanneer twee knoppen erg dicht tegen elkaar aan zitten.
 
+  Bevindingen shocks: Wanneer het shockapparaat op de laagste stand stond was de website nog prima te besturen, heel af en toe maakte je een klein foutje door perongeluk ergens op te dubbelklikken. Op de hogere stand van het apparaat werd het wel lastig om de website normaal te kunnen besturen omdat je nauwelijks meer controle had over je hand, in combinatie met de touchpad van mijn laptop werd dit ontzettend lastig.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  Voor gebruikers met zo'n beperking is het daarom wenselijk dat de knoppen een groot formaat hebben en genoeg ruimte van elkaar verwijderd zijn zodat er niet perongeluk op een verkeerde knop wordt geklikt.
+  Voor gebruikers met zulke beperkingen is het wenselijk dat de verschillende knoppen op de website een groot formaat hebben en met genoeg ruimte van elkaar verwijderd zijn zodat er niet perongeluk op een verkeerde knop wordt geklikt.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light)
   <img src="readme-images/toegankelijkheidstest-met-bril.jpg" width="375px" alt="toegankelijkheidstest met bril">
@@ -97,8 +99,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   Primaire acties moeten heel duidelijk te herkennen zijn, dit kan worden gedaan door de knop extra groot te maken of door deze een opvallende kleur te geven.
-
-
 
 </details>
 
@@ -110,12 +110,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschets-home-pagina.jpg" width="375px" alt="breakdown van de home pagina">
+  <img src="readme-images/breakdownschets-home-pagina.jpg" width="175px" alt="breakdown van de home pagina">
 
-  <img src="readme-images/breakdownschets-herfst-pagina.jpg" width="375px" alt="breakdown van de herfst pagina">
+  <img src="readme-images/breakdownschets-herfst-pagina.jpg" width="175px" alt="breakdown van de herfst pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="breakdown het menu">
+  <img src="readme-images/breakdownschets-menu.jpg" width="175px" alt="breakdown het menu">
 
 </details>
 
@@ -131,9 +131,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/home-pagina-voortgangsgesprek-1.png" width="375px" alt="voortgang home pagina">
+  <img src="readme-images/home-pagina-voortgangsgesprek-1.png" width="175px" alt="voortgang home pagina">
 
-  <img src="readme-images/herfst-pagina-voortgangsgesprek-1.png" width="375px" alt="voortgang herfst pagina">
+  <img src="readme-images/herfst-pagina-voortgangsgesprek-1.png" width="175px" alt="voortgang herfst pagina">
 
 
   Ik merkte de afgelopen twee weken dat het schrijven van HTML en het opzetten van de layout in CSS best gemakkelijk ging. Verder merk ik wel dat heel veel kennis van vorig jaar is weggezakt waardoor ik best wat moeite heb met sommige dingen. Met name veel kleinere zaken zoals dingen positioneren, uitlijnen etc kosten me redelijk wat moeite en hebben soms ook al tot flinke frustraties geleid.
@@ -155,6 +155,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Problemen met GitHub -> wanneer ik mijn gehele map op GitHub wil zetten geeft het aan dat de bestanden te zwaar zijn om deze te kunnen uploaden -> hoe kan ik dit oplossen?
   - Vragen naar een handige manier om CSS document overzichtelijk te houden.
   - Op sommige buttons pakt de margin het tot de tekst van de button ipv de border van de button -> hoe zorg ik ervoor dat het tot de border gaat?
+  - De Efteling website gebruikt ::before om buttons de stylen, hoe werkt ::before precies?
 
 
   ### Verslag van meeting
@@ -162,8 +163,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   - Uitleg gekregen over hoe studentassistenten hun CSS document overzichtelijk houden -> bovenaan alle algemene dingen, vervolgens steeds specifieker. Overal duidelijke koppen maken zodat je code gemakkelijk terug kan vinden.
-  - Problemen met webite op GitHub zetten -> studentassitent heeft hierbij geholpen.
-  - Studentassistent heeft GitHub Desktop voor mij geinstalleerd en juist ingesteld -> hier zie ik alle aanpassingen die ik heb gemaakt, deze kan ik vervolgens op GitHub zetten door eerst op 'commit to main' en vervolgens op 'push' te klikken.
+  - Problemen met webite op GitHub zetten -> studentassistent heeft hierbij geholpen.
+  - Studentassistent heeft GitHub Desktop voor mij geinstalleerd en juist ingesteld -> hier zie ik alle aanpassingen die ik heb gemaakt, deze kan ik vervolgens op GitHub zetten door eerst op 'commit to main' en vervolgens op 'push to origin' te klikken.
 
 </details>
 
