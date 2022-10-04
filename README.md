@@ -144,13 +144,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Vooraf is met mijn groepje besproken dat wij tijdens het eerste voortgangsgesprek allemaal individueel onze voortgang/problemen willen bespreken met de studentassistenten. Om deze reden heb ik zelf de volgende punten opgesteld die ik wil doornemen tijdens het gesprek:
 
   - Problemen met GitHub -> wanneer ik mijn gehele map op GitHub wil zetten geeft het aan dat de bestanden te zwaar zijn om deze te kunnen uploaden -> hoe kan ik dit oplossen?
   - Vragen naar een handige manier om CSS document overzichtelijk te houden.
@@ -159,8 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
+  Hieronder zijn de belangrijkste uitkomsten van het voortgangsgesprek op een rijtje gezet:
 
   - Uitleg gekregen over hoe studentassistenten hun CSS document overzichtelijk houden -> bovenaan alle algemene dingen, vervolgens steeds specifieker. Overal duidelijke koppen maken zodat je code gemakkelijk terug kan vinden.
   - Problemen met webite op GitHub zetten -> studentassistent heeft hierbij geholpen.
@@ -277,7 +270,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - HTML/CSS code doorlopen op fouten.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hieronder zijn de belangrijkste uitkomsten van het voortgangsgesprek op een rijtje gezet:
 
   - Problemen met GitHub zijn verholpen -> fonts worden nu ook via GitHub goed weergegeven.
   - grid repeat in plaats van dingen meerdere keren herhalen -> staat iets netter in de code
@@ -306,6 +299,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   Herfst pagina (op klein & groot formaat scherm)
+
   <img src="readme-images/eindresultaat-herfst-klein.png" width="175px" alt="eindresultaat herfst pagina op klein scherm">
   <img src="readme-images/eindresultaat-herfst-groot.png" width="375px" alt="eindresultaat herfst pagina op groot scherm">
 
@@ -319,15 +313,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar, accessibility en nog veel meer. Ook had ik in het begin moeite met het niet kunnen gebruiken van classes, vorig jaar gooide ik namenlijk echt overal een class op om deze elementen vervolgens in CSS te kunnen selecteren. Door verplicht andere selectoren te gebruiken werd ik in het begin vaak erg gefrustreerd, maar nu aan het einde van dit vak merk ik juist hoe ontzettend handig het is.
+  
+  Ik ben erg tevreden over hetgeen wat ik heb opgeleverd voor dit vak. Tijdens het hele proces heb ik ontzettend veel nieuwe dingen geleerd zoals grid, before & after, responsive navbar, accessibility en nog veel meer. Ook had ik in het begin moeite met het niet kunnen gebruiken van classes, vorig jaar gooide ik namenlijk echt overal een class op om deze elementen vervolgens in CSS te kunnen selecteren. Door verplicht andere selectoren te gebruiken werd ik in het begin vaak erg gefrustreerd, maar nu aan het einde van dit vak merk ik juist hoe ontzettend handig het is. Al met al kijk ik met een erg positief gevoel terug op dit vak.
 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-  Om eerlijk te zijn is eigenlijk heel veel wat ik wilde maken uiteindelijk wel gelukt, sommige dingen natuurlijk wel met iets meer moeite dan de andere dingen. Bijvoorbeeld het volledig responsive maken van de website heeft op sommige punten veel tijd gekost maar uiteindelijk ben ik toch erg tevreden met het resultaat.
-  Ik heb wel gekozen om sommige lastige dingen van de Efteling website niet na te maken omdat ik bang was hier teveel tijd aan kwijt te zijn.
+  
+  Om eerlijk te zijn is eigenlijk heel veel wat ik wilde maken uiteindelijk wel gelukt, sommige dingen natuurlijk wel met iets meer moeite dan de andere dingen. Bijvoorbeeld het volledig responsive maken van de website heeft op sommige punten veel tijd gekost maar uiteindelijk ben ik toch erg tevreden met het resultaat. Ik heb wel gekozen om sommige lastige dingen van de Efteling website niet na te maken omdat ik bang was hier teveel tijd aan kwijt te zijn. Aan de ene kant vind ik het jammer dat ik die uitdaging niet ben aangegaan maar aan de andere kant was ik bang dat ik anders in tijdnood zou komen doordat ik hier telang mee bezig zou zijn geweest.
+
+  Iets wat ik nogsteeds wel lastig vind, maar inmiddels wel beter gaat, is het efficienter schrijven van code. Ik merk dat ik heel veel code dubbel heb geschreven, dit zou ik een stuk slimmer hebben kunnen doen en dit is dan ook iets waar ik bij volgende projecten meer op zou willen letten.
+
+  Als laatste had ik af en toe ook wat problemen met GitHub, dit kwam voornamelijk omdat ik hier nog nooit mee had gewerkt. Het was hierom ontzettend fijn dat de studentassistenten mij konden helpen met deze problemen.
 
 </details>
 
@@ -342,8 +339,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. https://www.w3schools.com/howto/howto_css_image_text.asp
+  2. https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html
   3. https://css-tricks.com/forums/topic/transform-rotated-element-fixed-to-the-right-help/
 
 </details>

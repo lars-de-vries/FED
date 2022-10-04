@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-a, summary {
+a, button, summary {
 	cursor: pointer;
 }
 
@@ -25,7 +25,6 @@ a, summary {
 	--color-efteling-red: #B71234;
 	--color-border: #ede5d5;
 	--color-button-outline-red: #9B0F2C;
-
 }
 
 
@@ -80,6 +79,7 @@ img {
 	width: 100%;
 }
 
+/* witruimte tussen sections */
 section{
 	margin-bottom: 2em !important
 }
@@ -251,7 +251,9 @@ p {
 /* HEADER */
 /**********/
 
+/* SMALL HEADER */
 
+/* is op klein formaat scherm niet zichtbaar */
 header:first-of-type{
 	display: none;
 	background: var(--color-background);
@@ -271,54 +273,53 @@ header:first-of-type ul{
 	align-items: center;
 }
 
+/* nederlandse vlag icon */
 header:first-of-type ul li:last-of-type img{
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
 }
 
+/* staat om laatste link en vlag icon heen */
 header:first-of-type ul li:last-of-type a{
 	display: flex;
 	align-items: center;
 	gap: 0.5em;
 }
 
-
-
 header:first-of-type a{
 	text-decoration: none;
 	color: var(--color-text);
 	font-size: 0.75em;
 	font-family: 'open sans', sans-serif;
-
 }
 
 header:first-of-type a:hover{
 	color: var(--color-efteling-red);
 }
 
-
+/* zichtbaar op groot formaat scherm */
 @media (min-width: 50em){
 	header:first-of-type{
-		display: inline;
+		display: block;
 	}
 }
 
 
 
 
+/* MAIN HEADER */
 
-/* skip to content button */
+/* skip to content button -> normaal niet zichtbaar */
 header:nth-of-type(2) > div > a:nth-of-type(2) {
 	position: absolute;
 	transform: translatey(-300%);
 }
 
+/* skip to content button -> zichtbaar gemaakt wanneer erop wordt gefocust */
 header:nth-of-type(2) > div > a:nth-of-type(2):focus {
 	transform: translatey(100%);
 }
-
-
 
 header:nth-of-type(2) {
 	background-color: white;
@@ -371,13 +372,11 @@ header:nth-of-type(2) > div > div button{
 	font-size: 1em;
 	color: var(--color-text);
 }
-header:nth-of-type(2) > div > div button:hover {
-	cursor: pointer;
-}
+
+/* hamburger menu icon */
 header:nth-of-type(2) > div > div button img {
 	width: 2em;
 }
-
 
 header:nth-of-type(2) nav{ 
 	list-style:none;
@@ -466,8 +465,6 @@ header:nth-of-type(2) > div > div p{
 
 
 
-
-
 /**********/
 /* FOOTER */
 /**********/
@@ -489,6 +486,7 @@ footer a:hover{
 	color: var(--color-efteling-red);
 }
 
+/* tekstveld formulier */
 input[type=email] {
 	padding: 0.5em 1em;
 	border-radius: 5px;
@@ -497,8 +495,10 @@ input[type=email] {
 	font-family: 'open sans', sans-serif;
 	margin-top: 1em;
 	width: 100%;
+	max-width: 28em;
 }
 
+/* button formulier */
 input[type=submit] {
 	border: none;
 	cursor: pointer;
@@ -531,7 +531,6 @@ footer details[open] summary::after{
 	content: '-'
 }
 
-
 /* laat standaard icon niet meer zien */
 footer details summary::-webkit-details-marker {
 	display: none;
@@ -543,9 +542,11 @@ footer details li{
 	margin-top: 1.25em;
 }
 
+/* haalt nav voor groot scherm weg*/
 footer > nav:nth-of-type(2){
 	display: none;
 }
+
 
 /* FOOTER OP GROOT SCHERM */
 
@@ -559,8 +560,8 @@ footer > nav:nth-of-type(2){
 		font-size: 1em;
 	}
 
+	/* haalt nav voor klein scherm weg */
 	footer > nav:nth-of-type(1){
-		/* haalt nav voor klein scherm weg */
 		display: none;
 	}
 
@@ -602,19 +603,19 @@ footer > nav:nth-of-type(2){
 
 /* HERO SECTION */
 
-.index main > section:nth-of-type(1) img{
+.index main > section:nth-of-type(1){
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.index main > section:nth-of-type(1) > img{
 	width: 100%;
 	height: 20em;
 	object-fit: cover;
 	object-position: 1em 40%;
 	filter: brightness(70%);
 	transform: scale(1.5);
-}
-
-.index main > section:nth-of-type(1){
-	position: relative;
-	text-align: center;
-	overflow: hidden;
 }
 
 /* container om h1 & button -> centreert deze content*/
@@ -632,13 +633,13 @@ footer > nav:nth-of-type(2){
 	align-items: center;
 }
 
-.index main > section:nth-of-type(1) h1 {
+.index main > section:nth-of-type(1) > div h1 {
 	margin-bottom: 0.75em;
 	width: 80%;
 	max-width: 10em;
 }
 
-.index main > section:nth-of-type(1) a {
+.index main > section:nth-of-type(1) > div a {
 	margin: 0 20px;
 }
 
@@ -668,9 +669,9 @@ footer > nav:nth-of-type(2){
 	border: 1px solid var(--color-border);
 	background-color: white;
 	border-radius: 5px;
-	display: flex;
 }
 
+/* container om tekst & button */
 .index main > section:nth-of-type(2) > div > div{
 	padding: 20px;
 }
@@ -685,9 +686,9 @@ footer > nav:nth-of-type(2){
 	gap: 1em;
 	margin-bottom: 5px;
 	font-size: 0.875em;
-	
 }
 
+/* groene checkmarks */
 .index main > section:nth-of-type(2) > div > div img{
 	height: 100%;
 	width: 1em;
@@ -695,7 +696,6 @@ footer > nav:nth-of-type(2){
 
 .index main > section:nth-of-type(2) > div > img{
 	border-radius: 5px 5px 0 0;
-	
 }
 
 @media (min-width: 48em){
@@ -732,38 +732,29 @@ footer > nav:nth-of-type(2){
 	flex-direction: column;
 	flex-basis: 50%;
 	gap: 20px;
-
 }
-
 
 .index main > section:nth-of-type(3) > div > div:nth-of-type(2) p{
 	margin: 10px 0;
 }
-
-
-
-
-
 
 .index section:nth-of-type(3) > div > div:first-of-type{
 	position: relative;
 }
 
 /* zorgt ervoor dat lasers het scherm niet groter maken */
-main{
+main {
 	overflow: hidden;
 }
 
-.laser-links{
+/* laserstralen uit oog */
+.laser-links, .laser-rechts{
 	position: absolute;
-	left: 73%;
-	top: 58%;
 	width: 3px;
 	height: 1000%;
 	background: red;
 	box-shadow: 0 0 10px 1px red;
 	border-radius: 20px;
-
 	animation-name: laser;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
@@ -771,23 +762,16 @@ main{
 	z-index: 999;
 }
 
+/* positioneren van laser op linkeroog */
+.laser-links{
+	left: 73%;
+	top: 58%;
+}
 
+/* positioneren van laser op rechteroog */
 .laser-rechts{
-	position: absolute;
 	left: 77%;
 	top: 57%;
-	width: 3px;
-	height: 1000%;
-	background: red;
-	border-radius: 20px;
-
-	box-shadow: 0 0 10px 1px red;
-
-	animation-name: laser;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	z-index: 999;
 }
 
 @keyframes laser {
@@ -804,16 +788,6 @@ main{
 		transform-origin: top;
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 48em){
 	.index main > section:nth-of-type(3){
@@ -833,9 +807,7 @@ main{
 	.index main > section:nth-of-type(3) > div > div:nth-of-type(2){
 		padding-right: 20px;
 	}
-
 }
-
 
 
 
@@ -875,12 +847,10 @@ main{
 	border-radius: 5px 5px 0 0;
 }
 
-.index main > div a{
-	margin-top: 20px;
-}
-
 .index main > div p{
-	flex-grow: 1; /*duwt button altijd naar de onderkant van de cart*/
+	flex-grow: 1; /*duwt button altijd naar de onderkant van de card*/
+	margin-top: 0.5em;
+	margin-bottom: 1.25em;
 }
 
 @media (min-width: 48em){
@@ -907,7 +877,6 @@ main{
 		font-size: 1.25em;
 	}
 }
-
 
 
 
@@ -943,7 +912,6 @@ main{
 	border-radius: 50%;
 	border: 1px solid var(--color-border);
 	background-color: white;
-
 	position: absolute;
 	z-index: 9999;
 	bottom: -45px;
@@ -1098,9 +1066,8 @@ main{
 	text-align: center;
 }
 
-
 .herfst section:nth-of-type(4) > div p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 .herfst section:nth-of-type(4) h2, .herfst section:nth-of-type(4) p{
@@ -1114,6 +1081,7 @@ main{
 	filter: brightness(70%);
 }
 
+/* scroll button */
 .herfst section:nth-of-type(4) > a {
 	height: 50px;
 	width: 50px;
@@ -1149,6 +1117,7 @@ main{
 	transform: translate(-50%, -50%);
 }
 
+/* scroll button arrow icon */
 .herfst section:nth-of-type(4) > a img{
 	height: 1em;
 	width: 1em;
@@ -1188,10 +1157,3 @@ main{
 		font-size: 1.25em;
 	}
 }
-
-/* section:target {
-	background: hotpink;
-} */
-
-
-
